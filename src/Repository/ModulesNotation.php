@@ -5,9 +5,9 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\ResitExamRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\ModulesNotationRepository")
  */
-class ResitExamRepository
+class ModulesNotation
 {
     /**
      * @ORM\Id()
@@ -17,22 +17,17 @@ class ResitExamRepository
     private $id;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="string", length=255)
      */
-    private $aPaye;
+    private $description;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Date", inversedBy="resitExams")
-     */
-    private $date;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="resitExams")
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="modulesNotations")
      */
     private $user;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Modules", inversedBy="resitExam")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Modules", inversedBy="modulesNotation")
      */
     private $modules;
 
@@ -41,26 +36,14 @@ class ResitExamRepository
         return $this->id;
     }
 
-    public function getAPaye(): ?bool
+    public function getDescription(): ?string
     {
-        return $this->aPaye;
+        return $this->description;
     }
 
-    public function setAPaye(bool $aPaye): self
+    public function setDescription(string $description): self
     {
-        $this->aPaye = $aPaye;
-
-        return $this;
-    }
-
-    public function getDate(): ?Date
-    {
-        return $this->date;
-    }
-
-    public function setDate(?Date $date): self
-    {
-        $this->date = $date;
+        $this->description = $description;
 
         return $this;
     }
