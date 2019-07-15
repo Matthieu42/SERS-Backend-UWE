@@ -10,11 +10,3 @@ $container = $app->getContainer();
 $container['user_repository'] = function (ContainerInterface $container): UserRepository {
     return new UserRepository($container->get('db'));
 };
-
-$container['task_repository'] = function (ContainerInterface $container): TaskRepository {
-    return new TaskRepository($container->get('db'));
-};
-
-$container['note_repository'] = function (ContainerInterface $container): NoteRepository {
-    return new NoteRepository($container->get('db'));
-};

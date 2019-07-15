@@ -6,6 +6,10 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
+
+/**
+ * @ORM\Entity
+ */
 class User
 {
     /**
@@ -19,6 +23,11 @@ class User
      * @ORM\Column(type="string", length=255)
      */
     private $name;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $ouii;
 
     /**
      * @ORM\Column(type="string", length=255)
