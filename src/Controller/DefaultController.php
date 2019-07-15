@@ -20,9 +20,9 @@ class DefaultController extends BaseController
         $this->setParams($request, $response, $args);
         $url = getenv('APP_DOMAIN');
         $endpoints = [
-            'tasks' => $url . '/api/v1/modules',
-            'users' => $url . '/api/v1/marks',
-            'notes' => $url . '/api/v1/users',
+            'modules' => $url . '/api/v1/modules',
+            'users' => $url . '/api/v1/users',
+            'marks' => $url . '/api/v1/marks',
             'status' => $url . '/status',
             'this help' => $url . '',
         ];
