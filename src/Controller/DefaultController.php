@@ -20,9 +20,9 @@ class DefaultController extends BaseController
         $this->setParams($request, $response, $args);
         $url = getenv('APP_DOMAIN');
         $endpoints = [
-            'tasks' => $url . '/api/v1/tasks',
-            'users' => $url . '/api/v1/users',
-            'notes' => $url . '/api/v1/notes',
+            'tasks' => $url . '/api/v1/modules',
+            'users' => $url . '/api/v1/marks',
+            'notes' => $url . '/api/v1/users',
             'status' => $url . '/status',
             'this help' => $url . '',
         ];
@@ -38,13 +38,10 @@ class DefaultController extends BaseController
     public function getStatus(Request $request, Response $response, array $args): Response
     {
         $this->setParams($request, $response, $args);
-        $userService = $this->container->get('user_service');
-        $noteService = $this->container->get('note_service');
-        $taskService = $this->container->get('task_service');
+    
+        
         $db = [
-            'users' => count($userService->getUsers()),
-            'tasks' => count($taskService->getAllTasks()),
-            'notes' => count($noteService->getNotes()),
+        
         ];
         $status = [
             'db' => $db,
