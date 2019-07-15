@@ -1,0 +1,109 @@
+[2019-07-15 23:29:28] app.ERROR: completed [] {"uid":"394b610"}
+[2019-07-15 23:30:11] app.ERROR: 1 [] {"uid":"a2f33aa"}
+[2019-07-15 23:30:51] app.ERROR: 1 [] {"uid":"50de14d"}
+[2019-07-15 23:32:18] app.ERROR: 1 [] {"uid":"30e2d50"}
+[2019-07-15 23:34:08] app.ERROR: 1 [] {"uid":"db9b819"}
+[2019-07-15 23:36:31] app.ERROR: 1 [] {"uid":"797b8d7"}
+[2019-07-15 23:40:27] app.ERROR: 1 [] {"uid":"c87e411"}
+[2019-07-15 23:41:00] app.ERROR: 1 [] {"uid":"2f01e06"}
+[2019-07-15 23:41:14] app.ERROR: 1 [] {"uid":"c730b6b"}
+[2019-07-15 23:44:06] app.ERROR: 1 [] {"uid":"6dc2ff3"}
+[2019-07-15 23:44:06] app.DEBUG: Get user 1 [] {"uid":"6dc2ff3"}
+[2019-07-15 23:44:06] app.INFO: completed [] {"uid":"6dc2ff3"}
+[2019-07-15 23:44:39] app.ERROR: 1 [] {"uid":"f9cff3f"}
+[2019-07-15 23:44:39] app.DEBUG: Get user 1 [] {"uid":"f9cff3f"}
+[2019-07-15 23:44:39] app.INFO: completed [] {"uid":"f9cff3f"}
+[2019-07-15 23:45:33] app.ERROR: 1 [] {"uid":"97cfd7f"}
+[2019-07-15 23:45:33] app.DEBUG: Get user 1 [] {"uid":"97cfd7f"}
+[2019-07-15 23:45:33] app.INFO: completed [] {"uid":"97cfd7f"}
+[2019-07-15 23:46:08] app.ERROR: 1 [] {"uid":"48d3c6a"}
+[2019-07-15 23:46:11] app.ERROR: 1 [] {"uid":"6d179b3"}
+[2019-07-15 23:46:11] app.ERROR: 1 [] {"uid":"c8bc9f6"}
+[2019-07-15 23:46:11] app.ERROR: 1 [] {"uid":"adc8c25"}
+[2019-07-15 23:49:51] app.ERROR: 1 [] {"uid":"4935440"}
+[2019-07-15 23:49:52] app.ERROR: 1 [] {"uid":"9dbc46f"}
+[2019-07-15 23:50:01] app.ERROR: 1 [] {"uid":"51c48f8"}
+[2019-07-15 23:50:25] app.ERROR: 1 [] {"uid":"f8b1934"}
+[2019-07-15 23:50:25] app.DEBUG: Get user 1 [] {"uid":"f8b1934"}
+[2019-07-15 23:50:25] app.INFO: User retrieved 1 [] {"uid":"f8b1934"}
+[2019-07-15 23:50:34] app.ERROR: 1 [] {"uid":"4e828a4"}
+[2019-07-15 23:50:34] app.DEBUG: Get user 1 [] {"uid":"4e828a4"}
+[2019-07-15 23:50:34] app.INFO: User retrieved 1 [] {"uid":"4e828a4"}
+[2019-07-15 23:50:51] app.ERROR: 1 [] {"uid":"fa87161"}
+[2019-07-15 23:50:51] app.DEBUG: Get user 1 [] {"uid":"fa87161"}
+[2019-07-15 23:50:51] app.INFO: User retrieved 1 [] {"uid":"fa87161"}
+[2019-07-15 23:51:55] app.ERROR: 1 [] {"uid":"ea27884"}
+[2019-07-15 23:51:55] app.DEBUG: Get user 1 [] {"uid":"ea27884"}
+[2019-07-15 23:51:55] app.INFO: User retrieved 1 [] {"uid":"ea27884"}
+[2019-07-15 23:51:56] app.ERROR: 1 [] {"uid":"afc7740"}
+[2019-07-15 23:51:56] app.DEBUG: Get user 1 [] {"uid":"afc7740"}
+[2019-07-15 23:51:56] app.INFO: User retrieved 1 [] {"uid":"afc7740"}
+[2019-07-15 23:51:57] app.ERROR: 1 [] {"uid":"c5acd87"}
+[2019-07-15 23:51:57] app.DEBUG: Get user 1 [] {"uid":"c5acd87"}
+[2019-07-15 23:51:57] app.INFO: User retrieved 1 [] {"uid":"c5acd87"}
+[2019-07-15 23:52:10] app.ERROR: 1 [] {"uid":"0558d1b"}
+[2019-07-15 23:52:10] app.DEBUG: Get user 1 [] {"uid":"0558d1b"}
+[2019-07-15 23:52:10] app.INFO: User retrieved 1 [] {"uid":"0558d1b"}
+[2019-07-15 23:52:11] app.ERROR: 1 [] {"uid":"cbc699a"}
+[2019-07-15 23:52:11] app.DEBUG: Get user 1 [] {"uid":"cbc699a"}
+[2019-07-15 23:52:11] app.INFO: User retrieved 1 [] {"uid":"cbc699a"}
+[2019-07-15 23:58:21] app.ERROR: 1 [] {"uid":"28941f4"}
+[2019-07-15 23:58:22] app.ERROR: 1 [] {"uid":"d00b31a"}
+[2019-07-15 23:58:22] app.ERROR: 1 [] {"uid":"516bd44"}
+[2019-07-15 23:58:23] app.ERROR: 1 [] {"uid":"bc9f97f"}
+[2019-07-15 23:58:35] app.ERROR: 1 [] {"uid":"5e0cbc8"}
+[2019-07-16 00:00:16] app.ERROR: 1 [] {"uid":"aeba955"}
+[2019-07-16 00:00:16] app.DEBUG: Get user  [] {"uid":"aeba955"}
+[2019-07-16 00:00:16] app.INFO: User retrieved 1 [] {"uid":"aeba955"}
+[2019-07-16 00:00:51] app.ERROR: 1 [] {"uid":"99e2834"}
+[2019-07-16 00:00:51] app.DEBUG: Get user  [] {"uid":"99e2834"}
+[2019-07-16 00:00:51] app.INFO: User retrieved 1 [] {"uid":"99e2834"}
+[2019-07-16 00:02:07] app.ERROR: 1 [] {"uid":"a2881e4"}
+[2019-07-16 00:02:07] app.DEBUG: Get user  [] {"uid":"a2881e4"}
+[2019-07-16 00:02:07] app.INFO: User retrieved 1 [] {"uid":"a2881e4"}
+[2019-07-16 00:02:08] app.ERROR: 1 [] {"uid":"06389db"}
+[2019-07-16 00:02:08] app.DEBUG: Get user  [] {"uid":"06389db"}
+[2019-07-16 00:02:08] app.INFO: User retrieved 1 [] {"uid":"06389db"}
+[2019-07-16 00:02:09] app.ERROR: 1 [] {"uid":"4c02601"}
+[2019-07-16 00:02:09] app.DEBUG: Get user  [] {"uid":"4c02601"}
+[2019-07-16 00:02:09] app.INFO: User retrieved 1 [] {"uid":"4c02601"}
+[2019-07-16 00:02:09] app.ERROR: 1 [] {"uid":"fcef8b8"}
+[2019-07-16 00:02:09] app.DEBUG: Get user  [] {"uid":"fcef8b8"}
+[2019-07-16 00:02:09] app.INFO: User retrieved 1 [] {"uid":"fcef8b8"}
+[2019-07-16 00:03:11] app.ERROR: 1 [] {"uid":"2c3d201"}
+[2019-07-16 00:03:11] app.DEBUG: Get user  [] {"uid":"2c3d201"}
+[2019-07-16 00:03:11] app.INFO: User retrieved 1 [] {"uid":"2c3d201"}
+[2019-07-16 00:03:43] app.ERROR: 1 [] {"uid":"bd84d8a"}
+[2019-07-16 00:03:43] app.DEBUG: Get user  [] {"uid":"bd84d8a"}
+[2019-07-16 00:03:43] app.INFO: User retrieved 1 [] {"uid":"bd84d8a"}
+[2019-07-16 00:04:38] app.ERROR: 1 [] {"uid":"8299ef4"}
+[2019-07-16 00:04:38] app.DEBUG: Get user  [] {"uid":"8299ef4"}
+[2019-07-16 00:04:38] app.INFO: User retrieved 1 [] {"uid":"8299ef4"}
+[2019-07-16 00:04:38] app.ERROR: 1 [] {"uid":"1066337"}
+[2019-07-16 00:04:38] app.DEBUG: Get user  [] {"uid":"1066337"}
+[2019-07-16 00:04:38] app.INFO: User retrieved 1 [] {"uid":"1066337"}
+[2019-07-16 00:04:39] app.ERROR: 1 [] {"uid":"e4774b2"}
+[2019-07-16 00:04:40] app.DEBUG: Get user  [] {"uid":"e4774b2"}
+[2019-07-16 00:04:40] app.INFO: User retrieved 1 [] {"uid":"e4774b2"}
+[2019-07-16 00:04:40] app.ERROR: 1 [] {"uid":"170788f"}
+[2019-07-16 00:04:40] app.DEBUG: Get user  [] {"uid":"170788f"}
+[2019-07-16 00:04:40] app.INFO: User retrieved 1 [] {"uid":"170788f"}
+[2019-07-16 00:05:59] app.INFO: completed [] {"uid":"f1633b8"}
+[2019-07-16 00:06:04] app.ERROR: 1 [] {"uid":"bb94592"}
+[2019-07-16 00:06:04] app.DEBUG: Get user  [] {"uid":"bb94592"}
+[2019-07-16 00:06:04] app.INFO: User retrieved 1 [] {"uid":"bb94592"}
+[2019-07-16 00:07:08] app.ERROR: 1 [] {"uid":"84a15fd"}
+[2019-07-16 00:07:08] app.DEBUG: Get user 1 [] {"uid":"84a15fd"}
+[2019-07-16 00:07:08] app.INFO: User retrieved 1 [] {"uid":"84a15fd"}
+[2019-07-16 00:07:30] app.ERROR: 1 [] {"uid":"30ddb08"}
+[2019-07-16 00:07:30] app.DEBUG: Get user 1 [] {"uid":"30ddb08"}
+[2019-07-16 00:07:30] app.INFO: User retrieved 1 [] {"uid":"30ddb08"}
+[2019-07-16 00:07:30] app.ERROR: 1 [] {"uid":"11a9f37"}
+[2019-07-16 00:07:30] app.DEBUG: Get user 1 [] {"uid":"11a9f37"}
+[2019-07-16 00:07:30] app.INFO: User retrieved 1 [] {"uid":"11a9f37"}
+[2019-07-16 00:07:33] app.ERROR: 1 [] {"uid":"98e2b27"}
+[2019-07-16 00:07:33] app.DEBUG: Get user 1 [] {"uid":"98e2b27"}
+[2019-07-16 00:07:33] app.INFO: User retrieved 1 [] {"uid":"98e2b27"}
+[2019-07-16 00:07:39] app.ERROR: 1 [] {"uid":"9c9f8a6"}
+[2019-07-16 00:07:39] app.DEBUG: Get user 1 [] {"uid":"9c9f8a6"}
+[2019-07-16 00:07:39] app.INFO: User retrieved 1 [] {"uid":"9c9f8a6"}

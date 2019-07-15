@@ -1,204 +1,84 @@
-# REST API IN SLIM PHP
-
-Example of REST API with [Slim PHP micro framework](http://www.slimframework.com).
-
-![alt text](extras/img/slim-logo.png "Slim PHP micro framework")
-
-This simple RESTful API made in Slim version 3, allows CRUD operations to manage resources like: Users, Tasks and Notes.
-
-[![Build Status](https://travis-ci.org/maurobonfietti/rest-api-slim-php.svg?branch=master)](https://travis-ci.org/maurobonfietti/rest-api-slim-php)
-[![Test Coverage](https://codeclimate.com/github/maurobonfietti/api-rest-slimphp/badges/coverage.svg)](https://codeclimate.com/github/maurobonfietti/api-rest-slimphp/coverage)
-[![Code Quality](https://scrutinizer-ci.com/g/maurobonfietti/api-rest-slimphp/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/maurobonfietti/api-rest-slimphp/?branch=master)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=maurobonfietti_rest-api-slim-php&metric=alert_status)](https://sonarcloud.io/dashboard?id=maurobonfietti_rest-api-slim-php)
-
-You can also read this [README IN SPANISH](README_SPANISH.md).
-
-More info about this project in my post: [How to create a REST API using Slim PHP](https://maurobonfietti.github.io/2019-06-03-rest-api-slim-php/).
-
-I implemented this API in [this project](https://github.com/maurobonfietti/rest-api-slim-php-web-app). It's a todo list web app developed in Angular.
-
-
-## QUICK INSTALL:
-
-### Pre Requisite:
-
-- Git.
-- Composer.
-- PHP.
-- MySQL/MariaDB.
-
-### Run commands:
-
-In your terminal execute this commands:
-
-```bash
-$ git clone https://github.com/maurobonfietti/rest-api-slim-php.git && cd rest-api-slim-php
-$ cp .env.example .env
-$ composer install
-$ composer database
-$ composer start
-```
-
-[![How to install](extras/img/how-to-install-2.gif)](https://youtu.be/xQfTcKbD7NI)
-
-
-## STEP BY STEP:
-
-### 1- Clone project and install dependencies:
-
-```bash
-$ git clone https://github.com/maurobonfietti/rest-api-slim-php.git
-$ cd rest-api-slim-php
-$ cp .env.example .env
-$ composer install
-```
-
-
-### 2- Create a new MySQL database. For example: "rest_api_slim_php".
-
-From the command line run:
-
-```bash
-$ mysql -e 'CREATE DATABASE rest_api_slim_php;'
-```
-
-
-### 3- Create the structure and load test data into the database.
-
-The database can be updated manually using the following file: [database.sql](database/database.sql).
-
-It can also be run from the command line:
-
-```bash
-$ mysql rest_api_slim_php < database/database.sql
-```
-
-
-### 4- Configure the connection data with MySQL.
-
-Edit and complete configuration file: `.env`. For example:
-
-```
-DB_HOSTNAME = '127.0.0.1'
-DB_DATABASE = 'rest_api_slim_php'
-DB_USERNAME = 'root'
-DB_PASSWORD = ''
-```
-
-
-### 5- Configure optional environment variables.
-
-For example:
-
-```
-DISPLAY_ERROR_DETAILS=true
-APP_DOMAIN='https://www.yourdomain.com'
-USE_REDIS_CACHE=false
-REDIS_URL=''
-SECRET_KEY='YourSuperSecret-KeY'
-```
-
-
-## LOCAL SERVER:
-
-You can start the PHP internal web server by running:
-
-```bash
-$ composer start
-```
-
-
-### NOTE:
-
-If everything went well :sunglasses:, you can access the project locally by entering:
-[Help](http://localhost:8080), 
-[Status](http://localhost:8080/status) and
-[Notes](http://localhost:8080/api/v1/notes).
-
-The `composer start` command would be the equivalent to execute:
-
-```bash
-$ php -S 0.0.0.0:8080 -t public public/index.php
-```
-
-
-## DEPENDENCIES:
-
-### LIST OF REQUIRE DEPENDENCIES:
-
-- [slim/slim](https://github.com/slimphp/Slim): Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.
-- [respect/validation](https://github.com/Respect/Validation): The most awesome validation engine ever created for PHP.
-- [palanik/corsslim](https://github.com/palanik/CorsSlim): Cross-origin resource sharing (CORS) middleware for PHP Slim.
-- [vlucas/phpdotenv](https://github.com/vlucas/phpdotenv): Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.
-- [predis/predis](https://github.com/phpredis/phpredis): A PHP extension for Redis.
-- [firebase/php-jwt](https://github.com/firebase/php-jwt): A simple library to encode and decode JSON Web Tokens (JWT) in PHP.
-
-### LIST OF DEVELOPMENT DEPENDENCIES:
-
-- [phpunit/phpunit](https://github.com/sebastianbergmann/phpunit): The PHP Unit Testing framework.
-- [phpstan/phpstan](https://github.com/phpstan/phpstan): PHPStan - PHP Static Analysis Tool.
-
-
-## TESTS:
-
-Access the root of the project and run all tests PHPUnit with `composer test`.
-
-```bash
-PHPUnit 8.2.3 by Sebastian Bergmann and contributors.
-
-...........................................................                                                                                                            59 / 59 (100%)
-
-Time: 243 ms, Memory: 14.00 MB
-
-OK (59 tests, 320 assertions)
-```
-
-
-## DOCUMENTATION:
-
-### ENDPOINTS:
-
-- Help: `GET /`
-
-- Status: `GET /status`
-
-- Login User: `POST /login`
-
-- Create User: `POST /api/v1/users`
-
-- Update User: `PUT /api/v1/users/{id}`
-
-- Delete User: `DELETE /api/v1/users/{id}`
-
-- Get All Tasks: `GET /api/v1/tasks`
-
-- Get One Task: `GET /api/v1/tasks/{id}`
-
-- Search Tasks: `GET /api/v1/tasks/search/{string}`
-
-- Create Task: `POST /api/v1/tasks`
-
-- Update Task: `PUT /api/v1/tasks/{id}`
-
-- Delete Task: `DELETE /api/v1/tasks/{id}`
-
-Also, you can see the API documentation with the [full list of endpoints](extras/docs/endpoints.md).
-
-
-### IMPORT WITH POSTMAN:
-
-All the information of the API, prepared to download and use as postman collection: [Import Collection](https://www.getpostman.com/collections/b8493a923ab81ef53ebb).
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/b8493a923ab81ef53ebb)
-
-
-### HELP AND DOCS:
-
-For more information on how to use the REST API, see the following documentation available on [Postman Documenter](https://documenter.getpostman.com/view/1915278/RztfwByr).
-
-
-## GIVE IT A TRY:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-Check it out to this [live demo](http://bit.ly/2DdwKkd) hosted on Heroku.
+# RESTful API skeleton using Slim 3, Doctrine 2 (MySQL), PHPUnit, Mockery
+Single POST endpoint storing data via Doctrine 2, and unit test on the used service.
+
+by Elvis Ciotti <elvisciotti@gmail.com>
+
+### Requirements
+* PHP 5.4 or above.
+* Mysql at least v5.0 running (install with docker if not available, see section below).
+ Any doctrine2-compatible database can be used instead, change config accordingly
+
+### Setup and run
+
+ * Permissions
+ 
+        chmod +x composer vendor/bin/*
+        chmod -R +w app/log/* app/cache/*
+    
+ * Set mysql connection data into `app/settings.php`
+ * create database (example with `dbxyz` as a name)
+ 
+        mysql -u root -p -e "CREATE DATABASE dbxyz;"
+        mysql -u root -p -e "CREATE DATABASE dbxyz_test;"
+ * Create schema using doctrine. 
+ 
+        # create
+        vendor/bin/doctrine orm:schema-tool:create
+        # to drop (and test other fixtures with an empty db)
+        vendor/bin/doctrine orm:schema-tool:drop --force
+
+     In case of failures, check db connection settings
+
+ * Run server `php -S localhost:8000`
+ * keep log open in another window. 
+ Set at `debug` level to see all the internal operations which any added record is logged.
+ On production it'll be set to warning/error for better performances.
+ 
+ 
+    `tail -f app/log/app.log`
+    
+ * add data
+ 
+    # insert test file.json
+    curl -X POST -d @app/fixtures/file.json http://localhost:8000/record
+    
+    # clean db
+    vendor/bin/doctrine orm:schema-tool:drop --force
+    vendor/bin/doctrine orm:schema-tool:create
+    
+    # run 2nd fixtures
+    curl -X POST -d @app/fixtures/file.json http://localhost:8000/record
+
+### How to run tests
+
+    # unit test
+    vendor/bin/phpunit tests/app/Service/
+    
+    # functional tests
+    vendor/bin/phpunit tests/app/Integration/
+    
+    # all the above
+    vendor/bin/phpunit
+
+### Run mysql in a docker container, if not available
+
+    docker run --name mysql -e MYSQL_ROOT_PASSWORD=123 -p 3306:3306 -d mysql:latest 
+    docker exec -it mysql bash
+    mysql -u root -p123
+    # if alreay created
+    docker start mysql
+
+### TODO
+* move routes to controller
+* response listener for JSON input/output
+* 
+
+### Notes about architectural choices, frameworks and performances
+ * There is a unit test using mocks for Doctrine, asserting that all the data gets saved into entities. 
+ There also is a functional/integration test hitting the endpoint with a real request
+ and also asserting that the data has been store into the test database
+ Code is `app/routes.php`, `app/src` and tests under `tests`
+ * Logger service, always a good practice to enable/disable and see what's happening.
+ It can be set at different levels depending on the environment. Each single insert it logged.
+  If kept at DEBUG level, it can be seen all the added data.
+ * Mockery for testing, a mocking framework more suitable than PHPUnit mocks
