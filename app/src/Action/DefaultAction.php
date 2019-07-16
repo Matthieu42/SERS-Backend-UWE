@@ -1,7 +1,6 @@
 <?php
 namespace App\Action;
 
-use App\Service\ProviderService;
 use Psr\Log\LoggerInterface;
 use Slim\Http\Request;
 use Slim\Http\Response;
@@ -16,7 +15,6 @@ final class DefaultAction
 
     public function __construct(LoggerInterface $logger)
     {
-        $this->providerService = $providerService;
         $this->logger = $logger;
     }
 
