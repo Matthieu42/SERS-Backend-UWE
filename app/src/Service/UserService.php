@@ -34,9 +34,15 @@ class UserService
         }
         
         $user = $this->em->find('App\Entity\User',$id);
-        $modules = $this->em->find('App\Entity\User',$id);
         $this->logger->debug('Get user '. $id);
         return $user;
+    }
+
+    public function getAllUsers()
+    {
+        $users = $this->em->getRepository("App\Entity\User")->findAll();
+        $this->logger->debug('Get all users ');
+        return $users;
     }
 
     public function createUser(){

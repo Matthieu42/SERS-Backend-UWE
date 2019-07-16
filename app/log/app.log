@@ -117,3 +117,10 @@
 [2019-07-16 10:49:38] app.INFO: User retrieved 1 [] {"uid":"8ba265c"}
 [2019-07-16 14:16:13] app.DEBUG: Get user 1 [] {"uid":"f40c348"}
 [2019-07-16 14:16:13] app.INFO: User retrieved 1 [] {"uid":"f40c348"}
+[2019-07-16 14:37:10] app.DEBUG: Get user 1 [] {"uid":"d814e80"}
+[2019-07-16 14:37:10] app.INFO: User retrieved 1 [] {"uid":"d814e80"}
+[2019-07-16 14:38:15] app.INFO: User retrieved  [] {"uid":"ce8c1db"}
+[2019-07-16 14:39:43] app.DEBUG: Get all users  [] {"uid":"93d209a"}
+[2019-07-16 14:54:12] app.DEBUG: Get all users  [] {"uid":"07be54c"}
+[2019-07-16 14:54:16] app.DEBUG: Get all users  [] {"uid":"6b965ae"}
+[2019-07-16 14:55:15] app.INFO: completed [] {"uid":"4a64f55"}

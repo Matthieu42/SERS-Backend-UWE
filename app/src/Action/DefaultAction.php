@@ -8,17 +8,13 @@ use Slim\Http\Response;
 
 final class DefaultAction
 {
-    /**
-     * @var ProviderService
-     */
-    private $providerService;
 
     /**
      * @var LoggerInterface
      */
     private $logger;
 
-    public function __construct(ProviderService $providerService, LoggerInterface $logger)
+    public function __construct(LoggerInterface $logger)
     {
         $this->providerService = $providerService;
         $this->logger = $logger;
@@ -26,10 +22,8 @@ final class DefaultAction
 
     public function __invoke(Request $request, Response $response, $args)
     {
-        
         $this->logger->info('completed');
         $response->getBody()->write('Welcome to SERS API');
-
         return $response;
     }
 }

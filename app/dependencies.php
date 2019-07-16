@@ -30,15 +30,12 @@ $container['em'] = function ($c) {
 };
 
 // Doctrine
-$container['providerService'] = function ($c) {
-    return new \App\Service\ProviderService($c->get('em'), $c->get('logger'));
-};
 $container['userService'] = function ($c) {
     return new \App\Service\UserService($c->get('em'), $c->get('logger'));
 };
 
 $container[App\Action\DefaultAction::class] = function ($c) {
-    return new App\Action\DefaultAction($c->get('providerService'), $c->get('logger'));
+    return new App\Action\DefaultAction( $c->get('logger'));
 };
 
 $container[App\Action\User\GetUserWithModulesAction::class] = function ($c) {
