@@ -1,34 +1,34 @@
 <?php
-namespace App\Action\User;
+namespace App\Action\Module;
 
-use App\Service\UserService;
+use App\Service\ModuleService;
 use Psr\Log\LoggerInterface;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
-final class GetAllUsersWithModulesAction
+final class GetAllModulesAction
 {
     /**
-     * @var UserService
+     * @var ModuleService
      */
-    private $userService;
+    private $moduleService;
 
     /**
      * @var LoggerInterface
      */
     private $logger;
 
-    public function __construct(UserService $userService, LoggerInterface $logger)
+    public function __construct(ModuleService $moduleService, LoggerInterface $logger)
     {
-        $this->userService = $userService;
+        $this->moduleService = $moduleService;
         $this->logger = $logger;
     }
 
     public function __invoke(Request $request, Response $response, $args)
     {        
     
-        $users = $this->userService->getAllUsers();
-        $response = $response->withJson($users);
+        $modules = $this->moduleService->getAllModules();
+        $response = $response->withJson($modules);
         return $response;
     }
 }

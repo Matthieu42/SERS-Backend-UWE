@@ -33,6 +33,9 @@ $container['em'] = function ($c) {
 $container['userService'] = function ($c) {
     return new \App\Service\UserService($c->get('em'), $c->get('logger'));
 };
+$container['moduleService'] = function ($c) {
+    return new \App\Service\ModuleService($c->get('em'), $c->get('logger'));
+};
 
 $container[App\Action\DefaultAction::class] = function ($c) {
     return new App\Action\DefaultAction( $c->get('logger'));
@@ -48,4 +51,8 @@ $container[App\Action\User\CreateUserAction::class] = function ($c) {
 
 $container[App\Action\User\GetAllUsersWithModulesAction::class] = function ($c) {
     return new App\Action\User\GetAllUsersWithModulesAction($c->get('userService'), $c->get('logger'));
+};
+
+$container[App\Action\Module\GetAllModulesAction::class] = function ($c) {
+    return new App\Action\Module\GetAllModulesAction($c->get('moduleService'), $c->get('logger'));
 };

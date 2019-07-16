@@ -124,3 +124,8 @@
 [2019-07-16 14:54:12] app.DEBUG: Get all users  [] {"uid":"07be54c"}
 [2019-07-16 14:54:16] app.DEBUG: Get all users  [] {"uid":"6b965ae"}
 [2019-07-16 14:55:15] app.INFO: completed [] {"uid":"4a64f55"}
+[2019-07-16 15:11:42] app.DEBUG: Get all modules  [] {"uid":"1e0618f"}
+[2019-07-16 15:13:16] app.DEBUG: Get all modules  [] {"uid":"e87bef0"}
+[2019-07-16 15:14:44] app.DEBUG: Get all modules  [] {"uid":"9b3f126"}
+[2019-07-16 15:25:36] app.DEBUG: Get all users  [] {"uid":"74ba9c4"}
+[2019-07-16 15:25:40] app.DEBUG: Get all users  [] {"uid":"794bffb"}
