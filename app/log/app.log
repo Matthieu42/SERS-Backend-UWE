@@ -163,3 +163,8 @@
 [2019-07-16 15:44:00] app.INFO: completed [] {"uid":"d86e724"}
 [2019-07-16 15:44:00] app.INFO: completed [] {"uid":"51b5c40"}
 [2019-07-16 15:44:00] app.INFO: completed [] {"uid":"b20e9cf"}
+
+[2019-07-16 16:01:59] app.DEBUG: Get all modules  [] {"uid":"46bd25a"}
+[2019-07-16 16:06:52] app.DEBUG: Get all modules  [] {"uid":"204ff31"}
+[2019-07-16 16:08:50] app.DEBUG: Get all modules  [] {"uid":"e55506c"}
+[2019-07-16 16:09:05] app.INFO: completed [] {"uid":"11b70ce"}

@@ -65,10 +65,6 @@ class User implements \JsonSerializable
      */
     private $resitExams;
 
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\ModulesNotation", mappedBy="user")
-     */
-    private $modulesNotations;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Modules", mappedBy="user")
@@ -79,7 +75,6 @@ class User implements \JsonSerializable
     {
         $this->noteExams = new ArrayCollection();
         $this->resitExams = new ArrayCollection();
-        $this->modulesNotations = new ArrayCollection();
         $this->modules = new ArrayCollection();
     }
 
@@ -216,37 +211,6 @@ class User implements \JsonSerializable
             // set the owning side to null (unless already changed)
             if ($resitExam->getUser() === $this) {
                 $resitExam->setUser(null);
-            }
-        }
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|ModulesNotation[]
-     */
-    public function getModulesNotations(): Collection
-    {
-        return $this->modulesNotations;
-    }
-
-    public function addModulesNotation(ModulesNotation $modulesNotation): self
-    {
-        if (!$this->modulesNotations->contains($modulesNotation)) {
-            $this->modulesNotations[] = $modulesNotation;
-            $modulesNotation->setUser($this);
-        }
-
-        return $this;
-    }
-
-    public function removeModulesNotation(ModulesNotation $modulesNotation): self
-    {
-        if ($this->modulesNotations->contains($modulesNotation)) {
-            $this->modulesNotations->removeElement($modulesNotation);
-            // set the owning side to null (unless already changed)
-            if ($modulesNotation->getUser() === $this) {
-                $modulesNotation->setUser(null);
             }
         }
 

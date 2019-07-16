@@ -19,19 +19,14 @@ class Exam
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $note;
-
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\NoteExam", mappedBy="exam")
-     */
-    private $noteExam;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Date", inversedBy="exam")
      */
     private $date;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Modules", inversedBy="components")
+     */
+    private $modules;
 
     public function __construct()
     {
@@ -55,36 +50,6 @@ class Exam
         return $this;
     }
 
-    /**
-     * @return Collection|NoteExam[]
-     */
-    public function getNoteExam(): Collection
-    {
-        return $this->noteExam;
-    }
-
-    public function addNoteExam(NoteExam $noteExam): self
-    {
-        if (!$this->noteExam->contains($noteExam)) {
-            $this->noteExam[] = $noteExam;
-            $noteExam->setExam($this);
-        }
-
-        return $this;
-    }
-
-    public function removeNoteExam(NoteExam $noteExam): self
-    {
-        if ($this->noteExam->contains($noteExam)) {
-            $this->noteExam->removeElement($noteExam);
-            // set the owning side to null (unless already changed)
-            if ($noteExam->getExam() === $this) {
-                $noteExam->setExam(null);
-            }
-        }
-
-        return $this;
-    }
 
     public function getDate(): ?Date
     {

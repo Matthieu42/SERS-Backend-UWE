@@ -34,24 +34,18 @@ class Modules implements \JsonSerializable
     private $user;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\ModulesNotation", mappedBy="modules")
-     */
-    private $modulesNotation;
-
-    /**
      * @ORM\OneToMany(targetEntity="App\Entity\ResitExam", mappedBy="modules")
      */
     private $resitExam;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Components", mappedBy="modules")
+     * @ORM\OneToOne(targetEntity="App\Entity\Components")
      */
     private $components;
 
     public function __construct()
     {
         $this->user = new ArrayCollection();
-        $this->modulesNotation = new ArrayCollection();
         $this->resitExam = new ArrayCollection();
         $this->components = new ArrayCollection();
     }
@@ -106,37 +100,6 @@ class Modules implements \JsonSerializable
     {
         if ($this->user->contains($user)) {
             $this->user->removeElement($user);
-        }
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|ModulesNotation[]
-     */
-    public function getModulesNotation(): Collection
-    {
-        return $this->modulesNotation;
-    }
-
-    public function addModulesNotation(ModulesNotation $modulesNotation): self
-    {
-        if (!$this->modulesNotation->contains($modulesNotation)) {
-            $this->modulesNotation[] = $modulesNotation;
-            $modulesNotation->setModules($this);
-        }
-
-        return $this;
-    }
-
-    public function removeModulesNotation(ModulesNotation $modulesNotation): self
-    {
-        if ($this->modulesNotation->contains($modulesNotation)) {
-            $this->modulesNotation->removeElement($modulesNotation);
-            // set the owning side to null (unless already changed)
-            if ($modulesNotation->getModules() === $this) {
-                $modulesNotation->setModules(null);
-            }
         }
 
         return $this;

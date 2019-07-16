@@ -32,11 +32,6 @@ class Components
     private $modules;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Exam", cascade={"persist", "remove"})
-     */
-    private $exam;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\TypeComponent", inversedBy="components")
      */
     private $typeComponent;
@@ -78,18 +73,6 @@ class Components
     public function setModules(?Modules $modules): self
     {
         $this->modules = $modules;
-
-        return $this;
-    }
-
-    public function getExam(): ?Exam
-    {
-        return $this->exam;
-    }
-
-    public function setExam(?Exam $exam): self
-    {
-        $this->exam = $exam;
 
         return $this;
     }
