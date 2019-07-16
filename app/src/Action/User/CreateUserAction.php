@@ -26,7 +26,6 @@ final class CreateUserAction
 
     public function __invoke(Request $request, Response $response, $args)
     {
-        
         $this->logger->info($request);
         $user = $this->userService->createUser($request);
         $this->logger->info('User retrieved '.$args['id'] );

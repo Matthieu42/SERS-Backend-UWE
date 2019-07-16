@@ -24,9 +24,21 @@ class ModuleService
         $this->logger = $logger;
     }
 
-    public function getAllModules()
+    public function getAllModulesWithData()
     {
         $modules = $this->em->getRepository("App\Entity\Modules")->findAll();
+        $this->logger->debug('Get all modules ');
+        return $modules;
+    }
+
+    public function getAllModules()
+    {
+        $qb = $this->em->createQueryBuilder();
+        $fields = array('m.id', 'm.title', 'm.acronym');
+        $qb->select($fields)
+           ->from('App\Entity\Modules', 'm');
+        $query = $qb->getQuery();
+        $modules = $query->getResult();
         $this->logger->debug('Get all modules ');
         return $modules;
     }

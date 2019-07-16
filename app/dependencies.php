@@ -53,6 +53,10 @@ $container[App\Action\User\GetAllUsersWithModulesAction::class] = function ($c) 
     return new App\Action\User\GetAllUsersWithModulesAction($c->get('userService'), $c->get('logger'));
 };
 
-$container[App\Action\Module\GetAllModulesAction::class] = function ($c) {
-    return new App\Action\Module\GetAllModulesAction($c->get('moduleService'), $c->get('logger'));
+$container[App\Action\Module\GetAllModulesWithDataAction::class] = function ($c) {
+    return new App\Action\Module\GetAllModulesWithDataAction($c->get('moduleService'), $c->get('logger'));
+};
+
+$container[App\Action\Module\GetAllModules::class] = function ($c) {
+    return new App\Action\Module\GetAllModules($c->get('moduleService'), $c->get('logger'));
 };
