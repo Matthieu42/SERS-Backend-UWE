@@ -6,7 +6,7 @@ use Psr\Log\LoggerInterface;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
-final class GetUserAction
+final class GetUserWithModulesAction
 {
     /**
      * @var UserService
@@ -25,11 +25,8 @@ final class GetUserAction
     }
 
     public function __invoke(Request $request, Response $response, $args)
-    {
-           
-        $this->logger->error($args['id']);
+    {        
         $user = $this->userService->getUserById($args['id']);
-
         $this->logger->info('User retrieved '.$args['id'] );
         $response = $response->withJson($user);
         return $response;

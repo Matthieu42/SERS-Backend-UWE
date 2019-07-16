@@ -41,6 +41,14 @@ $container[App\Action\DefaultAction::class] = function ($c) {
     return new App\Action\DefaultAction($c->get('providerService'), $c->get('logger'));
 };
 
-$container[App\Action\User\GetUserAction::class] = function ($c) {
-    return new App\Action\User\GetUserAction($c->get('userService'), $c->get('logger'));
+$container[App\Action\User\GetUserWithModulesAction::class] = function ($c) {
+    return new App\Action\User\GetUserWithModulesAction($c->get('userService'), $c->get('logger'));
+};
+
+$container[App\Action\User\CreateUserAction::class] = function ($c) {
+    return new App\Action\User\CreateUserAction($c->get('userService'), $c->get('logger'));
+};
+
+$container[App\Action\User\GetAllUsersWithModulesAction::class] = function ($c) {
+    return new App\Action\User\GetAllUsersWithModulesAction($c->get('userService'), $c->get('logger'));
 };

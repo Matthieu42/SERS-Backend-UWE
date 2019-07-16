@@ -34,7 +34,16 @@ class UserService
         }
         
         $user = $this->em->find('App\Entity\User',$id);
+        $modules = $this->em->find('App\Entity\User',$id);
         $this->logger->debug('Get user '. $id);
         return $user;
+    }
+
+    public function createUser(){
+        //TODO
+        $user = new User();
+        $user->setName($newUsername);
+        $entityManager->persist($user);
+        $entityManager->flush();
     }
 }
