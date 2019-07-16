@@ -7,7 +7,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\ExamRepository")
  */
 class Exam
 {
@@ -18,15 +18,22 @@ class Exam
      */
     private $id;
 
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\NoteExam", mappedBy="exam")
+     */
+    private $noteExam;
+
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Date", inversedBy="exam")
      */
     private $date;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Modules", inversedBy="components")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Components")
      */
-    private $modules;
+    private $component;
 
     public function __construct()
     {
@@ -38,18 +45,38 @@ class Exam
         return $this->id;
     }
 
-    public function getNote(): ?string
+
+
+    /**
+     * @return Collection|NoteExam[]
+     */
+    public function getNoteExam(): Collection
     {
-        return $this->note;
+        return $this->noteExam;
     }
 
-    public function setNote(string $note): self
+    public function addNoteExam(NoteExam $noteExam): self
     {
-        $this->note = $note;
+        if (!$this->noteExam->contains($noteExam)) {
+            $this->noteExam[] = $noteExam;
+            $noteExam->setExam($this);
+        }
 
         return $this;
     }
 
+    public function removeNoteExam(NoteExam $noteExam): self
+    {
+        if ($this->noteExam->contains($noteExam)) {
+            $this->noteExam->removeElement($noteExam);
+            // set the owning side to null (unless already changed)
+            if ($noteExam->getExam() === $this) {
+                $noteExam->setExam(null);
+            }
+        }
+
+        return $this;
+    }
 
     public function getDate(): ?Date
     {
@@ -59,6 +86,18 @@ class Exam
     public function setDate(?Date $date): self
     {
         $this->date = $date;
+
+        return $this;
+    }
+
+    public function getComponent(): ?Components
+    {
+        return $this->component;
+    }
+
+    public function setComponent(?Components $component): self
+    {
+        $this->component = $component;
 
         return $this;
     }

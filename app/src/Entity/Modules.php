@@ -7,9 +7,9 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\ModulesRepository")
  */
-class Modules implements \JsonSerializable 
+class Modules
 {
     /**
      * @ORM\Id()
@@ -33,13 +33,14 @@ class Modules implements \JsonSerializable
      */
     private $user;
 
+
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\ResitExam", mappedBy="modules")
      */
     private $resitExam;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Components")
+     * @ORM\OneToMany(targetEntity="App\Entity\Components", mappedBy="modules")
      */
     private $components;
 
@@ -165,10 +166,5 @@ class Modules implements \JsonSerializable
         }
 
         return $this;
-    }
-
-    public function jsonSerialize()
-    {
-        return get_object_vars($this);
     }
 }
