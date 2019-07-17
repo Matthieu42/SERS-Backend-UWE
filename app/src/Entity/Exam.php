@@ -16,10 +16,10 @@ class Exam
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $id;
-
-
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\NoteExam", mappedBy="exam")
@@ -28,11 +28,15 @@ class Exam
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Date", inversedBy="exam")
+     * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $date;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Components")
+     * @Serializer\Expose
+     * @Serializer\Groups({"userData","userNoteExams"})
      */
     private $component;
 

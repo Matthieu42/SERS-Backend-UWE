@@ -17,24 +17,28 @@ class User
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $email;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $address;
 
@@ -51,18 +55,21 @@ class User
     /**
      * @ORM\Column(type="boolean")
      * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $isAdmin;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\NoteExam", mappedBy="user")
      * @Serializer\Expose
+     * @Serializer\Groups({"userNoteExams"})
      */
     private $noteExams;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\ResitExam", mappedBy="user")
      * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $resitExams;
 
@@ -70,6 +77,7 @@ class User
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Modules", mappedBy="user")
      * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $modules;
 

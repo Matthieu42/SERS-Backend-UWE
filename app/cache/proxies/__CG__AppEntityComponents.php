@@ -276,15 +276,4 @@ class Components extends \App\Entity\Components implements \Doctrine\ORM\Proxy\P
         return parent::setTypeComponent($typeComponent);
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    public function jsonSerialize()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'jsonSerialize', []);
-
-        return parent::jsonSerialize();
-    }
-
 }

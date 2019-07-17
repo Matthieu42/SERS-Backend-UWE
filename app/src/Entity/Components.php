@@ -15,21 +15,31 @@ class Components
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Serializer\Expose
+     * @Serializer\Groups({"userData","userNoteExams"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Serializer\Expose
+     * @Serializer\Groups({"userData","userNoteExams"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="float")
+     * @Serializer\Expose
+     * @Serializer\Groups({"userData","userNoteExams"})
      */
     private $percentage;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Modules", inversedBy="components")
+     * @Serializer\Expose
+     * 
+     * @Serializer\Groups({"userNoteExams"})
+     * 
      */
     private $modules;
 

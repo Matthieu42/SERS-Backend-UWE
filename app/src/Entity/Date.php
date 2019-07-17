@@ -16,11 +16,15 @@ class Date
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="datetime")
+     * @Serializer\Expose
+     * @Serializer\Groups({"userData"})
      */
     private $date;
 

@@ -16,16 +16,22 @@ class Modules
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Serializer\Expose
+     * @Serializer\Groups({"userData","userNoteExams"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Serializer\Expose
+     * @Serializer\Groups({"userData","userNoteExams"})
      */
     private $title;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Serializer\Expose
+     * *@Serializer\Groups({"userData","userNoteExams"})
      */
     private $acronym;
 

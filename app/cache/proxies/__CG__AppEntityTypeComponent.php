@@ -243,15 +243,4 @@ class TypeComponent extends \App\Entity\TypeComponent implements \Doctrine\ORM\P
         return parent::removeComponent($component);
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    public function jsonSerialize()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'jsonSerialize', []);
-
-        return parent::jsonSerialize();
-    }
-
 }

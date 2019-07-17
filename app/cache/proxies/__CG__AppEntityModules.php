@@ -331,15 +331,4 @@ class Modules extends \App\Entity\Modules implements \Doctrine\ORM\Proxy\Proxy
         return parent::removeComponent($component);
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    public function jsonSerialize()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'jsonSerialize', []);
-
-        return parent::jsonSerialize();
-    }
-
 }

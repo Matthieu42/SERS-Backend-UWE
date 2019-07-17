@@ -15,12 +15,14 @@ class NoteExam
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      * @Serializer\Expose
+     * @Serializer\Groups({"userNoteExams"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Serializer\Expose
+     * @Serializer\Groups({"userNoteExams"})
      */
     private $note;
 
@@ -32,6 +34,8 @@ class NoteExam
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Exam", inversedBy="noteExam")
+     * @Serializer\Expose
+     * @Serializer\Groups({"userNoteExams"})
      */
     private $exam;
 

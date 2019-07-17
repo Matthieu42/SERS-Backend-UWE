@@ -276,15 +276,4 @@ class Date extends \App\Entity\Date implements \Doctrine\ORM\Proxy\Proxy
         return parent::removeResitExam($resitExam);
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    public function jsonSerialize()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'jsonSerialize', []);
-
-        return parent::jsonSerialize();
-    }
-
 }

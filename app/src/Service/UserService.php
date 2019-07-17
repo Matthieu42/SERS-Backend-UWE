@@ -85,6 +85,8 @@ class UserService
         if (empty($id)) {
             return;
         }
+
+
         $sql = "SELECT  M.ID, M.Acronym, N.note, M.title as module, C.name as component FROM NoteExam N JOIN Exam E on N.exam_id = E.id JOIN Components C on E.component_id = C.id JOIN Modules M on C.modules_id = M.id WHERE user_id=?";
         $stmt = $this->em->getConnection()->prepare($sql);
         $stmt->execute(array($id));

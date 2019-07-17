@@ -5,6 +5,7 @@ use App\Service\UserService;
 use Psr\Log\LoggerInterface;
 use Slim\Http\Request;
 use Slim\Http\Response;
+use JMS\Serializer\SerializationContext;
 
 final class GetUserAction
 {
@@ -29,8 +30,9 @@ final class GetUserAction
         $user = $this->userService->getUserById($args['id']);
         $this->logger->info('User retrieved '.$args['id'] );
         $serializer = \JMS\Serializer\SerializerBuilder::create()->build();
-        $jsonContent = $serializer->serialize($user, 'json');
+        $jsonContent = $serializer->serialize($user, 'json', SerializationContext::create()->setGroups(array('userData')));
         $response = $response->withHeader('Content-type', 'application/json');
+        
         $response->getBody()->write($jsonContent);
 
         return $response;
