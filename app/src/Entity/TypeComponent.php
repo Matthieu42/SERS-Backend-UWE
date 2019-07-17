@@ -5,11 +5,12 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use JMS\Serializer\Annotation as Serializer;
 /**
  * @ORM\Entity
+ * @Serializer\ExclusionPolicy("ALL") 
  */
-class TypeComponent implements \JsonSerializable 
+class TypeComponent 
 {
     /**
      * @ORM\Id()
@@ -81,8 +82,5 @@ class TypeComponent implements \JsonSerializable
         return $this;
     }
 
-    public function jsonSerialize()
-    {
-        return get_object_vars($this);
-    }
+    
 }

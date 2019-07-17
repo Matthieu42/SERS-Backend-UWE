@@ -28,7 +28,11 @@ final class GetUserAction
     {        
         $user = $this->userService->getUserById($args['id']);
         $this->logger->info('User retrieved '.$args['id'] );
-        $response = $response->withJson($user);
+        $serializer = \JMS\Serializer\SerializerBuilder::create()->build();
+        $jsonContent = $serializer->serialize($user, 'json');
+        $response = $response->withHeader('Content-type', 'application/json');
+        $response->getBody()->write($jsonContent);
+
         return $response;
     }
 }

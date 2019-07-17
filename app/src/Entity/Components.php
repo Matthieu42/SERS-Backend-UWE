@@ -4,10 +4,12 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use JMS\Serializer\Annotation as Serializer;
 /**
  * @ORM\Entity
+ * @Serializer\ExclusionPolicy("ALL")
  */
-class Components implements \JsonSerializable 
+class Components 
 {
     /**
      * @ORM\Id()
@@ -89,8 +91,5 @@ class Components implements \JsonSerializable
         return $this;
     }
     
-    public function jsonSerialize()
-    {
-        return get_object_vars($this);
-    }
+    
 }

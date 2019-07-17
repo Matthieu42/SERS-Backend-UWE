@@ -1,26 +1,30 @@
 <?php
 
 namespace App\Entity;
-
+use JMS\Serializer\Annotation\Exclude;
 use Doctrine\ORM\Mapping as ORM;
-
+use JMS\Serializer\Annotation as Serializer;
 /**
  * @ORM\Entity
+ * @Serializer\ExclusionPolicy("ALL") 
  */
-class NoteExam implements \JsonSerializable 
+class NoteExam
 {
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Serializer\Expose
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Serializer\Expose
      */
     private $note;
 
+    
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="noteExams")
      */
@@ -72,8 +76,4 @@ class NoteExam implements \JsonSerializable
         return $this;
     }
 
-    public function jsonSerialize()
-    {
-        return get_object_vars($this);
-    }
 }

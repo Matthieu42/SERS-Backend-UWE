@@ -5,11 +5,12 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use JMS\Serializer\Annotation as Serializer;
 /**
  * @ORM\Entity
+ * @Serializer\ExclusionPolicy("ALL") 
  */
-class Date implements \JsonSerializable 
+class Date 
 {
     /**
      * @ORM\Id()
@@ -118,8 +119,5 @@ class Date implements \JsonSerializable
         return $this;
     }
 
-    public function jsonSerialize()
-    {
-        return get_object_vars($this);
-    }
+    
 }

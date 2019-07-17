@@ -10,6 +10,7 @@ use Doctrine\ORM\EntityManager;
 use Psr\Log\LoggerInterface;
 use Doctrine\ORM\Query;
 use Doctrine\ORM\Query\ResultSetMapping;
+use JMS\Serializer;
 class UserService
 {
     /**
@@ -36,14 +37,9 @@ class UserService
         if (empty($id)) {
             return;
         }
-        $query = $this->em
-        ->getRepository("App\Entity\User")
-        ->createQueryBuilder('U')
-        ->where('U.id = :id')
-        ->setParameter('id', $id)
-        ->getQuery();
-        $user = $query->getArrayResult();
+        $user = $this->em->getRepository('App\Entity\User')->find($id);
         $this->logger->debug('Get user '. $id);
+
         return $user;
     }
 
@@ -60,10 +56,6 @@ class UserService
         }
 
         $users = $this->em->getRepository('App\Entity\User')->findBy(array('email' => $mail));
-
-
-
-
         $this->logger->debug('Get user '. $mail);
         $user=$users[0];
         return $user;
@@ -114,10 +106,6 @@ class UserService
             $module['title'] = $note['module'];
             $modules[$note['ID']] = $module;
         }
-
-
-        
-
         return $modules;
     }
 

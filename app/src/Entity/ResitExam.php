@@ -3,21 +3,24 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use JMS\Serializer\Annotation as Serializer;
 /**
  * @ORM\Entity
+ * @Serializer\ExclusionPolicy("ALL") 
  */
-class ResitExam implements \JsonSerializable 
+class ResitExam 
 {
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Serializer\Expose
      */
     private $id;
 
     /**
      * @ORM\Column(type="boolean")
+     * @Serializer\Expose
      */
     private $aPaye;
 
@@ -94,8 +97,5 @@ class ResitExam implements \JsonSerializable
         return $this;
     }
 
-    public function jsonSerialize()
-    {
-        return get_object_vars($this);
-    }
+    
 }

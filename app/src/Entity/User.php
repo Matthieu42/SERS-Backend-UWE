@@ -5,31 +5,36 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use JMS\Serializer\Annotation as Serializer;
 /**
  * @ORM\Entity
+ * @Serializer\ExclusionPolicy("ALL")
  */
-class User implements \JsonSerializable 
+class User
 {
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Serializer\Expose
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Serializer\Expose
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Serializer\Expose
      */
     private $email;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Serializer\Expose
      */
     private $address;
 
@@ -45,22 +50,26 @@ class User implements \JsonSerializable
 
     /**
      * @ORM\Column(type="boolean")
+     * @Serializer\Expose
      */
     private $isAdmin;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\NoteExam", mappedBy="user")
+     * @Serializer\Expose
      */
     private $noteExams;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\ResitExam", mappedBy="user")
+     * @Serializer\Expose
      */
     private $resitExams;
 
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Modules", mappedBy="user")
+     * @Serializer\Expose
      */
     private $modules;
 
@@ -238,8 +247,4 @@ class User implements \JsonSerializable
         return $this;
     }
 
-    public function jsonSerialize()
-    {
-        return get_object_vars($this);
-    }
 }
