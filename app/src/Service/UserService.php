@@ -93,13 +93,32 @@ class UserService
         if (empty($id)) {
             return;
         }
-        $sql = " 
-        SELECT N.note, M.title, C.name FROM NoteExam N JOIN Exam E on N.exam_id = E.id JOIN Components C on E.component_id = C.id JOIN Modules M on C.modules_id = M.id WHERE user_id=?";
+        $sql = "SELECT  M.ID, M.Acronym, N.note, M.title as module, C.name as component FROM NoteExam N JOIN Exam E on N.exam_id = E.id JOIN Components C on E.component_id = C.id JOIN Modules M on C.modules_id = M.id WHERE user_id=?";
         $stmt = $this->em->getConnection()->prepare($sql);
         $stmt->execute(array($id));
         $result = $stmt->fetchAll();
         $this->logger->debug('Get note for user'. $id);
-        return $result;
+        $modules = array();
+        foreach($result as $note){
+            if($modules[$note['ID']] == null){
+                $module = array();
+            }else{
+                $module = $modules[$note['ID']];
+            }
+            $tempComp['component'] = $note['component'];
+            $tempComp['note']= $note['note'];
+            $module['marks'][] = $tempComp;
+
+            $module['ID'] = $note['ID'];
+            $module['Acronym'] = $note['Acronym'];
+            $module['title'] = $note['module'];
+            $modules[$note['ID']] = $module;
+        }
+
+
+        
+
+        return $modules;
     }
 
 
