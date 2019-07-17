@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
  */
-class NoteExam
+class NoteExam implements \JsonSerializable 
 {
     /**
      * @ORM\Id()
@@ -70,5 +70,10 @@ class NoteExam
         $this->exam = $exam;
 
         return $this;
+    }
+
+    public function jsonSerialize()
+    {
+        return get_object_vars($this);
     }
 }

@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
  */
-class Components
+class Components implements \JsonSerializable 
 {
     /**
      * @ORM\Id()
@@ -87,5 +87,10 @@ class Components
         $this->typeComponent = $typeComponent;
 
         return $this;
+    }
+    
+    public function jsonSerialize()
+    {
+        return get_object_vars($this);
     }
 }

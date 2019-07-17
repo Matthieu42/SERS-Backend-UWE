@@ -41,24 +41,28 @@ $container[App\Action\DefaultAction::class] = function ($c) {
     return new App\Action\DefaultAction( $c->get('logger'));
 };
 
-$container[App\Action\User\GetUserWithModulesAction::class] = function ($c) {
-    return new App\Action\User\GetUserWithModulesAction($c->get('userService'), $c->get('logger'));
+$container[App\Action\User\GetUserAction::class] = function ($c) {
+    return new App\Action\User\GetUserAction($c->get('userService'), $c->get('logger'));
 };
 
 $container[App\Action\User\CreateUserAction::class] = function ($c) {
     return new App\Action\User\CreateUserAction($c->get('userService'), $c->get('logger'));
 };
 
-$container[App\Action\User\GetAllUsersWithModulesAction::class] = function ($c) {
-    return new App\Action\User\GetAllUsersWithModulesAction($c->get('userService'), $c->get('logger'));
+$container[App\Action\User\GetAllUsersAction::class] = function ($c) {
+    return new App\Action\User\GetAllUsersAction($c->get('userService'), $c->get('logger'));
+};
+
+$container[App\Action\Module\GetAllModulesAction::class] = function ($c) {
+    return new App\Action\Module\GetAllModulesAction($c->get('moduleService'), $c->get('logger'));
 };
 
 $container[App\Action\Module\GetAllModulesWithDataAction::class] = function ($c) {
     return new App\Action\Module\GetAllModulesWithDataAction($c->get('moduleService'), $c->get('logger'));
 };
 
-$container[App\Action\Module\GetAllModules::class] = function ($c) {
-    return new App\Action\Module\GetAllModules($c->get('moduleService'), $c->get('logger'));
+$container[App\Action\NoteExams\GetNoteExamForUserAction::class] = function ($c) {
+    return new App\Action\NoteExams\GetNoteExamForUserAction($c->get('userService'), $c->get('logger'));
 };
 
 $container[App\Action\User\GetUserWithMail::class] = function ($c) {

@@ -5,9 +5,11 @@ namespace App\Service;
 use App\Entity\Components;
 use App\Entity\Modules;
 use App\Entity\User;
+use App\Entity\NoteExam;
 use Doctrine\ORM\EntityManager;
 use Psr\Log\LoggerInterface;
-
+use Doctrine\ORM\Query;
+use Doctrine\ORM\Query\ResultSetMapping;
 class UserService
 {
     /**
@@ -31,51 +33,16 @@ class UserService
      */
     public function getUserById( $id)
     {
-
-/*        $user = new User;
-        $user->setName('Mr.Right');
-        $user->setEmail("lo@l.com");
-        $user->setAddress("3 rue des lilas");
-        $user->setIsAdmin(false);
-        $user->setSaltKey("sdf");
-        $user->setPassword("dgkm");
-
-        $this->em->merge($user);
-        $this->em->flush();
-
-        $comp= new Components();
-        $comp->setName("comp1");
-        $comp->setPercentage(1);
-
-
-
-        //$this->em->clear();
-        $this->em->merge($comp);
-        $this->em->flush();
-
-        $mod = new Modules();
-        $mod->addUser($user);
-        $mod->setAcronym("lkjh");
-        $mod->setTitle("mlkjh");
-        $mod->addComponent($comp);
-        $this->em->merge($mod);
-        $this->em->flush();
-
-
-        $user->addModule($mod);
-
-        $this->em->merge($user);
-        $this->em->flush();*/
-
-
-        //$this->em->flush();
-
-
         if (empty($id)) {
             return;
         }
-        
-        $user = $this->em->find('App\Entity\User',$id);
+        $query = $this->em
+        ->getRepository("App\Entity\User")
+        ->createQueryBuilder('U')
+        ->where('U.id = :id')
+        ->setParameter('id', $id)
+        ->getQuery();
+        $user = $query->getArrayResult();
         $this->logger->debug('Get user '. $id);
         return $user;
     }
@@ -104,9 +71,13 @@ class UserService
 
     public function getAllUsers()
     {
-        $users = $this->em->getRepository("App\Entity\User")->findAll();
+        $query = $this->em
+                      ->getRepository("App\Entity\User")
+                      ->createQueryBuilder('U')
+                      ->getQuery();
+        $result = $query->getArrayResult();
         $this->logger->debug('Get all users ');
-        return $users;
+        return $result;
     }
 
 /*    public function createUser(){
@@ -115,5 +86,22 @@ class UserService
         $user->setName($newUsername);
         $entityManager->persist($user);
         $entityManager->flush();
-    }*/
+    }
+*/
+    public function getNoteExamsForUser($id)
+    {
+        if (empty($id)) {
+            return;
+        }
+        $sql = " 
+        SELECT N.note, M.title, C.name FROM NoteExam N JOIN Exam E on N.exam_id = E.id JOIN Components C on E.component_id = C.id JOIN Modules M on C.modules_id = M.id WHERE user_id=?";
+        $stmt = $this->em->getConnection()->prepare($sql);
+        $stmt->execute(array($id));
+        $result = $stmt->fetchAll();
+        $this->logger->debug('Get note for user'. $id);
+        return $result;
+    }
+
+
+
 }
