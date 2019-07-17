@@ -100,7 +100,7 @@ class UserService
         $this->logger->debug('Get note for user'. $id);
         $modules = array();
         foreach($result as $note){
-            if($modules[$note['ID']] == null){
+            if(!array_key_exists($note['ID'],$modules)){
                 $module = array();
             }else{
                 $module = $modules[$note['ID']];
