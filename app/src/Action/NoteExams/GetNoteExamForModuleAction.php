@@ -27,10 +27,10 @@ final class GetNoteExamForModuleAction
 
     public function __invoke(Request $request, Response $response, $args)
     {        
-        $user = $this->moduleService->getModuleByid($args['id']);
+        $notesCoef = $this->moduleService->getNoteForModule($args['id']);
         
         $serializer = \JMS\Serializer\SerializerBuilder::create()->build();
-        $jsonContent = $serializer->serialize($user, 'json', SerializationContext::create()->setGroups(array('moduleNoteExams')));
+        $jsonContent = $serializer->serialize($notesCoef, 'json');
         $response = $response->withHeader('Content-type', 'application/json');
         $this->logger->info('Exam note retrieved '. $args['id'] );
         $response->getBody()->write($jsonContent);
