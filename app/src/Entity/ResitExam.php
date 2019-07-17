@@ -22,6 +22,11 @@ class ResitExam
     private $aPaye;
 
     /**
+     * @ORM\Column(type="integer")
+     */
+    private $note;
+
+    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Date", inversedBy="resitExams")
      */
     private $date;
