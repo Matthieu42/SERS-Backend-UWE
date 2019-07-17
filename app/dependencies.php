@@ -68,3 +68,9 @@ $container[App\Action\NoteExams\GetNoteExamForUserAction::class] = function ($c)
 $container[App\Action\User\GetUserWithMail::class] = function ($c) {
     return new App\Action\User\GetUserWithMail($c->get('userService'), $c->get('logger'));
 };
+$container[App\Action\NoteExams\GetNoteExamForModuleAction::class] = function ($c) {
+    return new App\Action\NoteExams\GetNoteExamForModuleAction($c->get('moduleService'), $c->get('logger'));
+};
+$container[App\Action\Module\GetModulesForUser::class] = function ($c) {
+    return new App\Action\Module\GetModulesForUser($c->get('userService'), $c->get('logger'));
+};

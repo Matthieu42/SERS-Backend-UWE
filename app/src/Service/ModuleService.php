@@ -42,4 +42,19 @@ class ModuleService
         $this->logger->debug('Get all modules ');
         return $modules;
     }
+
+
+     /**
+     * @param id the id to search
+     */
+    public function getModuleById( $id)
+    {
+        if (empty($id)) {
+            return;
+        }
+        $module = $this->em->getRepository('App\Entity\Modules')->find($id);
+        $this->logger->debug('Get module '. $id);
+
+        return $module;
+    }
 }

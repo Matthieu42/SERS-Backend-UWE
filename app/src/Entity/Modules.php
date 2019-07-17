@@ -17,21 +17,21 @@ class Modules
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      * @Serializer\Expose
-     * @Serializer\Groups({"userData","userNoteExams"})
+     * @Serializer\Groups({"moduleForUser","userNoteExams"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Serializer\Expose
-     * @Serializer\Groups({"userData","userNoteExams"})
+     * @Serializer\Groups({"moduleForUser","userNoteExams"})
      */
     private $title;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Serializer\Expose
-     * *@Serializer\Groups({"userData","userNoteExams"})
+     * @Serializer\Groups({"moduleForUser","userNoteExams"})
      */
     private $acronym;
 
@@ -48,6 +48,8 @@ class Modules
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Components", mappedBy="modules")
+     * @Serializer\Expose
+     * @Serializer\Groups({"moduleNoteExams"})
      */
     private $components;
 

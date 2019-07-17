@@ -69,7 +69,6 @@ class User
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\ResitExam", mappedBy="user")
      * @Serializer\Expose
-     * @Serializer\Groups({"userData"})
      */
     private $resitExams;
 
@@ -77,7 +76,7 @@ class User
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Modules", mappedBy="user")
      * @Serializer\Expose
-     * @Serializer\Groups({"userData"})
+     * @Serializer\Groups({"moduleForUser"})
      */
     private $modules;
 
