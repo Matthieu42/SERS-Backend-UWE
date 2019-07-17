@@ -10,3 +10,9 @@
 [2019-07-17 16:23:10] app.INFO: Exam note retrieved 3 [] {"uid":"a134882"}
 [2019-07-17 16:23:12] app.DEBUG: Get note for user4 [] {"uid":"a9ced77"}
 [2019-07-17 16:23:12] app.INFO: Exam note retrieved 4 [] {"uid":"a9ced77"}
+[2019-07-17 17:06:47] app.DEBUG: Get all users  [] {"uid":"8499d2c"}
+[2019-07-17 17:07:02] app.DEBUG: Get all modules  [] {"uid":"52e1c0a"}
+[2019-07-17 17:07:05] app.DEBUG: Get note for user4 [] {"uid":"1ee0e09"}
+[2019-07-17 17:07:05] app.INFO: Exam note retrieved 4 [] {"uid":"1ee0e09"}
+[2019-07-17 17:07:31] app.DEBUG: Get user 1 [] {"uid":"5eeca58"}
+[2019-07-17 17:07:31] app.INFO: User retrieved 1 [] {"uid":"5eeca58"}
