@@ -60,3 +60,7 @@ $container[App\Action\Module\GetAllModulesWithDataAction::class] = function ($c)
 $container[App\Action\Module\GetAllModules::class] = function ($c) {
     return new App\Action\Module\GetAllModules($c->get('moduleService'), $c->get('logger'));
 };
+
+$container[App\Action\User\GetUserWithMail::class] = function ($c) {
+    return new App\Action\User\GetUserWithMail($c->get('userService'), $c->get('logger'));
+};
