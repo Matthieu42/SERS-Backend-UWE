@@ -26,7 +26,7 @@ final class GetNoteExamForModuleAction
 
     public function __invoke(Request $request, Response $response, $args)
     {        
-        $notesCoef = $this->moduleService->getNoteForModule($args['id']);
+        $notesCoef = $this->moduleService->getNoteForModuleSimple($args['id']);
         
         $serializer = \JMS\Serializer\SerializerBuilder::create()->build();
         $jsonContent = $serializer->serialize($notesCoef, 'json');

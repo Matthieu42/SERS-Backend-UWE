@@ -86,6 +86,21 @@ class ModuleService
         }
 
         $this->logger->debug('Get note for module'. $id);
-        return $components;
+        return [$components];
+    }
+
+    public function getNoteForModuleSimple($id){
+        if (empty($id)) {
+            return;
+        }
+        $sql = "SELECT N.note, C.percentage
+        FROM NoteExam N JOIN Exam E on N.exam_id = E.id JOIN Components C on E.component_id = C.id JOIN Modules M on C.modules_id = M.id
+        WHERE modules_id=?";
+        $stmt = $this->em->getConnection()->prepare($sql);
+        $stmt->execute(array($id));
+        $result = $stmt->fetchAll();
+
+        $this->logger->debug('Get note for module'. $id);
+        return $result;
     }
 }
