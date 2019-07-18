@@ -44,3 +44,33 @@
 [2019-07-18 00:31:24] app.DEBUG: Get user jimmyo@uwe.com [] {"uid":"9512b30"}
 [2019-07-18 00:31:28] app.DEBUG: Get user jimmyo@uwe.com [] {"uid":"dbbd677"}
 [2019-07-18 10:49:54] app.DEBUG: Get module 1 [] {"uid":"a5b1d0f"}
+[2019-07-18 10:56:59] app.DEBUG: Get note for user module5 1 [] {"uid":"96ac46e"}
+[2019-07-18 10:56:59] app.INFO: Exam note retrieved 5 [] {"uid":"96ac46e"}
+[2019-07-18 10:58:36] app.DEBUG: Get note for user module5 1 [] {"uid":"3495d9f"}
+[2019-07-18 10:58:36] app.INFO: Exam note retrieved 5 [] {"uid":"3495d9f"}
+[2019-07-18 10:58:41] app.DEBUG: Get user 1 [] {"uid":"4703b8b"}
+[2019-07-18 10:58:41] app.INFO: Exam note retrieved 1 [] {"uid":"4703b8b"}
+[2019-07-18 10:59:01] app.DEBUG: Get note for module1 [] {"uid":"41ca865"}
+[2019-07-18 10:59:01] app.INFO: Exam note retrieved 1 [] {"uid":"41ca865"}
+[2019-07-18 11:01:06] app.DEBUG: Get note for module1 [] {"uid":"405fe98"}
+[2019-07-18 11:01:06] app.INFO: Exam note retrieved 1 [] {"uid":"405fe98"}
+[2019-07-18 11:02:45] app.DEBUG: Get note for module1 [] {"uid":"6937212"}
+[2019-07-18 11:02:45] app.INFO: Exam note retrieved 1 [] {"uid":"6937212"}
+[2019-07-18 11:05:31] app.DEBUG: Get note for module1 [] {"uid":"46041ea"}
+[2019-07-18 11:05:31] app.INFO: Exam note retrieved 1 [] {"uid":"46041ea"}
+[2019-07-18 11:08:21] app.DEBUG: Get note for module1 [] {"uid":"bd170be"}
+[2019-07-18 11:08:21] app.INFO: Exam note retrieved 1 [] {"uid":"bd170be"}
+[2019-07-18 11:09:54] app.DEBUG: Get note for module1 [] {"uid":"85028cb"}
+[2019-07-18 11:09:54] app.INFO: Exam note retrieved 1 [] {"uid":"85028cb"}
+[2019-07-18 11:10:25] app.DEBUG: Get note for module1 [] {"uid":"9f3871d"}
+[2019-07-18 11:10:25] app.INFO: Exam note retrieved 1 [] {"uid":"9f3871d"}
+[2019-07-18 11:11:06] app.DEBUG: Get note for module1 [] {"uid":"ed2acdb"}
+[2019-07-18 11:11:06] app.INFO: Exam note retrieved 1 [] {"uid":"ed2acdb"}
+[2019-07-18 11:11:58] app.DEBUG: Get note for module2 [] {"uid":"f6f5e0a"}
+[2019-07-18 11:11:58] app.INFO: Exam note retrieved 2 [] {"uid":"f6f5e0a"}
+[2019-07-18 11:12:10] app.DEBUG: Get note for module5 [] {"uid":"e894a60"}
+[2019-07-18 11:12:10] app.INFO: Exam note retrieved 5 [] {"uid":"e894a60"}
+[2019-07-18 11:12:16] app.DEBUG: Get note for module4 [] {"uid":"d4b12be"}
+[2019-07-18 11:12:16] app.INFO: Exam note retrieved 4 [] {"uid":"d4b12be"}
+[2019-07-18 11:12:29] app.DEBUG: Get note for module1 [] {"uid":"9dc6f1c"}
+[2019-07-18 11:12:29] app.INFO: Exam note retrieved 1 [] {"uid":"9dc6f1c"}

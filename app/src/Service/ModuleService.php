@@ -62,13 +62,30 @@ class ModuleService
         if (empty($id)) {
             return;
         }
-        $sql = "SELECT N.note, C.percentage
+        $sql = "SELECT C.name,C.id as ComponentID,N.note, C.percentage
         FROM NoteExam N JOIN Exam E on N.exam_id = E.id JOIN Components C on E.component_id = C.id JOIN Modules M on C.modules_id = M.id
         WHERE modules_id=?";
         $stmt = $this->em->getConnection()->prepare($sql);
         $stmt->execute(array($id));
         $result = $stmt->fetchAll();
+
+        $components = array();
+        foreach($result as $component){
+            if(!array_key_exists($component['ComponentID'],$components)){
+                $componentTemp = array();
+                $componentTemp['marks'] = array();
+            }else{
+                $componentTemp = $components[$component['ComponentID']];
+            }
+            array_push($componentTemp['marks'],$component['note']);
+
+            $componentTemp['ComponentID'] = $component['ComponentID'];
+            $componentTemp['name'] = $component['name'];
+            $componentTemp['percentage'] = $component['percentage'];
+            $components[$component['ComponentID']] = $componentTemp;
+        }
+
         $this->logger->debug('Get note for module'. $id);
-        return $result;
+        return $components;
     }
 }
