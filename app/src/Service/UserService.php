@@ -87,14 +87,16 @@ class UserService
         if ($usr!==null){
             $pwdEntity = $usr->getPassword();
             if (password_verify($valuePwd,$pwdEntity )) {
-                $rep['answer']="truepassword";
+                $rep['answer']="success";
 
             } else {
-                $rep['answer']="falsepassword";
+                $rep['answer']="failure";
+                $rep['description']="password";
             }
         }
         else{
-            $rep['answer']="falsemail";
+            $rep['answer']="failure";
+            $rep['description']="mail";
 
         }
         return $rep;
