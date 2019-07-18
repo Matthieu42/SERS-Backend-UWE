@@ -179,6 +179,15 @@ class UserService
         return $modules;
     }
 
-
+    public function getNoteExamsForUserModule($idUser,$idModule){
+        $sql = "  SELECT C.id AS ComponentID, N.note, C.name, C.percentage
+  FROM NoteExam N JOIN Exam E on N.exam_id = E.id JOIN Components C on E.component_id = C.id JOIN Modules M on C.modules_id = M.id JOIN User U on N.user_id = U.id
+  WHERE modules_id=? and user_id=?";
+        $stmt = $this->em->getConnection()->prepare($sql);
+        $stmt->execute(array($idModule,$idUser));
+        $result = $stmt->fetchAll();
+        $this->logger->debug('Get note for user module'. $idUser . " ". $idModule);
+        return $result;
+    }
 
 }
