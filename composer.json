@@ -3,7 +3,7 @@
         "slim/slim": "3.7.*",
         "doctrine/orm": "2.5.*",
         "monolog/monolog": "^1.13",
-        "jms/serializer": "^3.1"
+        "jms/serializer": "^3.1",
         "monolog/monolog": "^1.13",
         "ext-json": "^1.6"
     },
