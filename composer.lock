@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b23d5ce72ca09a572c0b1b3b47c52ff",
+    "content-hash": "8ce48cdfab42a8e545d4ecb2c3a60975",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -3803,6 +3803,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-json": "^1.6"
+    },
     "platform-dev": []
 }
