@@ -57,16 +57,22 @@ class UserService
 
         $users = $this->em->getRepository('App\Entity\User')->findBy(array('email' => $mail));
         $this->logger->debug('Get user '. $mail);
-        $user=$users[0];
-        return $user;
+        if (isset($users[0])) {
+            $user = $users[0];
+            return $user;
+
+        }
+        else{
+            return null;
+        }
     }
 
     public function getAllUsers()
     {
         $query = $this->em
-                      ->getRepository("App\Entity\User")
-                      ->createQueryBuilder('U')
-                      ->getQuery();
+            ->getRepository("App\Entity\User")
+            ->createQueryBuilder('U')
+            ->getQuery();
         $result = $query->getArrayResult();
         $this->logger->debug('Get all users ');
         return $result;
@@ -90,11 +96,11 @@ class UserService
         }
 
 
-/*        if (password_verify($valuePwd, $enc)) {
-            return "password encrypted";
-        } else {
-            return "error during password encryption";
-        }*/
+        /*        if (password_verify($valuePwd, $enc)) {
+                    return "password encrypted";
+                } else {
+                    return "error during password encryption";
+                }*/
 
     }
 
@@ -128,14 +134,14 @@ class UserService
     }
 
 
-/*    public function createUser(){
-        //TODO
-        $user = new User();
-        $user->setName($newUsername);
-        $entityManager->persist($user);
-        $entityManager->flush();
-    }
-*/
+    /*    public function createUser(){
+            //TODO
+            $user = new User();
+            $user->setName($newUsername);
+            $entityManager->persist($user);
+            $entityManager->flush();
+        }
+    */
     public function getNoteExamsForUser($id)
     {
         if (empty($id)) {
@@ -165,15 +171,6 @@ class UserService
         return $modules;
     }
 
-    public function getNoteExamsForUserModule($idUser,$idModule){
-        $sql = "  SELECT C.id AS ComponentID, N.note, C.name, C.percentage
-  FROM NoteExam N JOIN Exam E on N.exam_id = E.id JOIN Components C on E.component_id = C.id JOIN Modules M on C.modules_id = M.id JOIN User U on N.user_id = U.id
-  WHERE modules_id=? and user_id=?";
-        $stmt = $this->em->getConnection()->prepare($sql);
-        $stmt->execute(array($idModule,$idUser));
-        $result = $stmt->fetchAll();
-        $this->logger->debug('Get note for user module'. $idUser . " ". $idModule);
-        return $result;
-    }
+
 
 }
