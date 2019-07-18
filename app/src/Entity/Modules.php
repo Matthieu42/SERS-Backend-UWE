@@ -49,7 +49,7 @@ class Modules
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Components", mappedBy="modules")
      * @Serializer\Expose
-     * @Serializer\Groups({"moduleNoteExams"})
+     * @Serializer\Groups({"moduleNoteExams","componentForModule"})
      */
     private $components;
 

@@ -89,3 +89,7 @@ $container[App\Action\User\userSignUp::class] = function ($c) {
 $container[App\Action\NoteExams\GetNoteExamsForUserModuleAction::class] = function ($c) {
     return new App\Action\NoteExams\GetNoteExamsForUserModuleAction($c->get('userService'), $c->get('logger'));
 };
+
+$container[App\Action\Component\GetComponentForModule::class] = function ($c) {
+    return new App\Action\Component\GetComponentForModule($c->get('moduleService'), $c->get('logger'));
+};

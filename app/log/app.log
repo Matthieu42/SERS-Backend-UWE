@@ -43,3 +43,4 @@
 [2019-07-18 00:28:27] app.DEBUG: Get user jimmy@uwe.com [] {"uid":"aacda33"}
 [2019-07-18 00:31:24] app.DEBUG: Get user jimmyo@uwe.com [] {"uid":"9512b30"}
 [2019-07-18 00:31:28] app.DEBUG: Get user jimmyo@uwe.com [] {"uid":"dbbd677"}
+[2019-07-18 10:49:54] app.DEBUG: Get module 1 [] {"uid":"a5b1d0f"}

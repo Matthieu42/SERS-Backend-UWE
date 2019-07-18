@@ -15,21 +15,21 @@ class Components
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      * @Serializer\Expose
-     * @Serializer\Groups({"userData","userNoteExams","moduleNoteExams"})
+     * @Serializer\Groups({"userData","userNoteExams","moduleNoteExams","componentForModule"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Serializer\Expose
-     * @Serializer\Groups({"userData","userNoteExams","moduleNoteExams"})
+     * @Serializer\Groups({"userData","userNoteExams","moduleNoteExams","componentForModule"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="float")
      * @Serializer\Expose
-     * @Serializer\Groups({"userData","userNoteExams","moduleNoteExams"})
+     * @Serializer\Groups({"userData","userNoteExams","moduleNoteExams","componentForModule"})
      */
     private $percentage;
 
