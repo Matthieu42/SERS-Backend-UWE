@@ -86,7 +86,7 @@ class ModuleService
         }
 
         $this->logger->debug('Get note for module'. $id);
-        return [$components];
+        return $components;
     }
 
     public function getNoteForModuleSimple($id){
