@@ -16,5 +16,5 @@ $app->get('/user/mail/[{mail}]', App\Action\User\GetUserWithMail::class);
 $app->get('/NoteExams/module/[{id}]', App\Action\NoteExams\GetNoteExamForModuleAction::class);
 $app->get('/module/user/[{id}]', App\Action\Module\GetModulesForUser::class);
 
-$app->post('/api/login', \App\Action\User\userLogin::class);
-$app->post('/api/signup', \App\Action\User\userSignUp::class);
+$app->post('/login', \App\Action\User\userLogin::class);
+$app->post('/signup', \App\Action\User\userSignUp::class);
