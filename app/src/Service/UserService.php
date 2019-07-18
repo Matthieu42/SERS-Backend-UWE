@@ -83,17 +83,21 @@ class UserService
         $value = json_decode($request->getBody());
         $valuePwd = $value->password;
         $usr = $this->getUserByMail($value->mail);
+        $rep = [];
         if ($usr!==null){
             $pwdEntity = $usr->getPassword();
             if (password_verify($valuePwd,$pwdEntity )) {
-                return "Password correct";
+                $rep['answer']="truepassword";
+
             } else {
-                return "Password incorrect";
+                $rep['answer']="falsepassword";
             }
         }
         else{
-            return "Pas de mail correspondant à ce compte";
+            $rep['answer']="falsemail";
+
         }
+        return $rep;
 
 
         /*        if (password_verify($valuePwd, $enc)) {
@@ -112,6 +116,7 @@ class UserService
         $name = $value->name;
         $address = $value->address;
         $mail = $value->mail;
+        $rep = [];
         $enc = password_hash($pwd, PASSWORD_BCRYPT);
         if ($pwd!==null && $name!==null && $address!==null && $mail!==null) {
             $usr = new User();
@@ -124,12 +129,13 @@ class UserService
             $this->em->persist($usr);
             $this->em->flush();
 
-
-            return "utilisateur cree";
+            $rep['answer']="success";
         }
         else{
-            return "merci de remplir tous les champs";
+            $rep['answer']="failure";
         }
+
+        return $rep;
 
     }
 
