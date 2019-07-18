@@ -85,3 +85,7 @@ $container[App\Action\User\userLogin::class] = function ($c) {
 $container[App\Action\User\userSignUp::class] = function ($c) {
     return new App\Action\User\userSignUp($c->get('userService'), $c->get('logger'));
 };
+
+$container[App\Action\NoteExams\GetNoteExamsForUserModuleAction::class] = function ($c) {
+    return new App\Action\NoteExams\GetNoteExamsForUserModuleAction($c->get('userService'), $c->get('logger'));
+};

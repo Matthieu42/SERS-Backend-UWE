@@ -6,6 +6,5 @@ $settings = require __DIR__ . '/app/settings.php';
 $app = new \Slim\App($settings);
 require __DIR__ . '/app/dependencies.php';
 require __DIR__ . '/app/routes.php';
-// Bootstrap the JMS custom annotations for Object to Json mapping
 Doctrine\Common\Annotations\AnnotationRegistry::registerLoader('class_exists');
 $app->run();

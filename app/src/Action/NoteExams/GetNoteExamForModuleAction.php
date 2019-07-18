@@ -5,7 +5,6 @@ use App\Service\ModuleService;
 use Psr\Log\LoggerInterface;
 use Slim\Http\Request;
 use Slim\Http\Response;
-use JMS\Serializer\SerializationContext;
 
 final class GetNoteExamForModuleAction
 {

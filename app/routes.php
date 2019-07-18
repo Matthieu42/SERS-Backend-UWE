@@ -18,3 +18,5 @@ $app->get('/module/user/[{id}]', App\Action\Module\GetModulesForUser::class);
 
 $app->post('/login', \App\Action\User\userLogin::class);
 $app->post('/signup', \App\Action\User\userSignUp::class);
+
+$app->get('/NoteExams/module/user/[{idUser}[/{idModule}]]', App\Action\NoteExams\GetNoteExamsForUserModuleAction::class);
