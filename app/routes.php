@@ -1,6 +1,8 @@
 <?php
 use Slim\Http\Request;
 use Slim\Http\Response;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Message\ResponseInterface;
 
 $app->get('/', App\Action\DefaultAction::class);
 
@@ -13,3 +15,6 @@ $app->get('/NoteExams/user/[{id}]', App\Action\NoteExams\GetNoteExamForUserActio
 $app->get('/user/mail/[{mail}]', App\Action\User\GetUserWithMail::class);
 $app->get('/NoteExams/module/[{id}]', App\Action\NoteExams\GetNoteExamForModuleAction::class);
 $app->get('/module/user/[{id}]', App\Action\Module\GetModulesForUser::class);
+
+$app->post('/api/login', \App\Action\User\userLogin::class);
+$app->post('/api/signup', \App\Action\User\userSignUp::class);

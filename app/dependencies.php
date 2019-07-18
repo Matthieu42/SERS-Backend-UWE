@@ -1,6 +1,9 @@
 <?php
 // DIC configuration
 
+use App\Action\User\GetUserWithMail;
+use App\Action\User\userLogin;
+
 $container = $app->getContainer();
 
 // -----------------------------------------------------------------------------
@@ -73,4 +76,12 @@ $container[App\Action\NoteExams\GetNoteExamForModuleAction::class] = function ($
 };
 $container[App\Action\Module\GetModulesForUser::class] = function ($c) {
     return new App\Action\Module\GetModulesForUser($c->get('userService'), $c->get('logger'));
+};
+
+$container[App\Action\User\userLogin::class] = function ($c) {
+    return new App\Action\User\userLogin($c->get('userService'), $c->get('logger'));
+};
+
+$container[App\Action\User\userSignUp::class] = function ($c) {
+    return new App\Action\User\userSignUp($c->get('userService'), $c->get('logger'));
 };

@@ -6,7 +6,7 @@ use Psr\Log\LoggerInterface;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
-final class userLogin
+final class userSignUp
 {
     /**
      * @var UserService
@@ -26,7 +26,7 @@ final class userLogin
 
     public function __invoke(Request $request, Response $response, $args)
     {
-        $user = $this->userService->userLogin($request);
+        $user = $this->userService->userSignUp($request);
         //$this->logger->info('User retrieved '.$args['mail'] );
         $response = $response->withJson($user);
         return $response;

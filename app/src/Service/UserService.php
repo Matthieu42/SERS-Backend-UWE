@@ -72,6 +72,62 @@ class UserService
         return $result;
     }
 
+    public function userLogin($request)
+    {
+        $value = json_decode($request->getBody());
+        $valuePwd = $value->password;
+        $usr = $this->getUserByMail($value->mail);
+        if ($usr!==null){
+            $pwdEntity = $usr->getPassword();
+            if (password_verify($valuePwd,$pwdEntity )) {
+                return "Password correct";
+            } else {
+                return "Password incorrect";
+            }
+        }
+        else{
+            return "Pas de mail correspondant à ce compte";
+        }
+
+
+/*        if (password_verify($valuePwd, $enc)) {
+            return "password encrypted";
+        } else {
+            return "error during password encryption";
+        }*/
+
+    }
+
+    public function userSignUp($request)
+    {
+        $value = json_decode($request->getBody());
+        //$value= json_encode($value);
+        $pwd = $value->password;
+        $name = $value->name;
+        $address = $value->address;
+        $mail = $value->mail;
+        $enc = password_hash($pwd, PASSWORD_BCRYPT);
+        if ($pwd!==null && $name!==null && $address!==null && $mail!==null) {
+            $usr = new User();
+            $usr->setName($name);
+            $usr->setPassword($enc);
+            $usr->setAddress($address);
+            $usr->setEmail($mail);
+            $usr->setSaltKey("useless");
+            $usr->setIsAdmin(false);
+            $this->em->persist($usr);
+            $this->em->flush();
+
+
+            return "utilisateur cree";
+        }
+        else{
+            return "merci de remplir tous les champs";
+        }
+
+    }
+
+
 /*    public function createUser(){
         //TODO
         $user = new User();
