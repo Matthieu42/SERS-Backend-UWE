@@ -57,12 +57,7 @@ class UserService
 
         $users = $this->em->getRepository('App\Entity\User')->findBy(array('email' => $mail));
         $this->logger->debug('Get user '. $mail);
-        if ($users[0]!==null) {
-            $user = $users[0];
-        }
-        else{
-            $user = "mail incorrect";
-        }
+        $user=$users[0];
         return $user;
     }
 
