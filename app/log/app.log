@@ -1,76 +1,20 @@
-[2019-07-17 16:15:43] app.DEBUG: Get note for userArray [] {"uid":"034cdb1"}
-[2019-07-17 16:15:43] app.INFO: Exam note retrieved 1 [] {"uid":"034cdb1"}
-[2019-07-17 16:16:16] app.DEBUG: Get note for user [] {"uid":"98f8911"}
-[2019-07-17 16:16:16] app.INFO: Exam note retrieved 1 [] {"uid":"98f8911"}
-[2019-07-17 16:22:53] app.DEBUG: Get note for user1 [] {"uid":"411e53e"}
-[2019-07-17 16:22:53] app.INFO: Exam note retrieved 1 [] {"uid":"411e53e"}
-[2019-07-17 16:23:07] app.DEBUG: Get note for user2 [] {"uid":"3f4e91e"}
-[2019-07-17 16:23:07] app.INFO: Exam note retrieved 2 [] {"uid":"3f4e91e"}
-[2019-07-17 16:23:10] app.DEBUG: Get note for user3 [] {"uid":"a134882"}
-[2019-07-17 16:23:10] app.INFO: Exam note retrieved 3 [] {"uid":"a134882"}
-[2019-07-17 16:23:12] app.DEBUG: Get note for user4 [] {"uid":"a9ced77"}
-[2019-07-17 16:23:12] app.INFO: Exam note retrieved 4 [] {"uid":"a9ced77"}
-[2019-07-17 20:33:35] app.INFO: completed [] {"uid":"4e01305"}
-[2019-07-17 23:59:36] app.DEBUG: Get user l@lol.com [] {"uid":"fbff9de"}
-[2019-07-17 23:59:54] app.DEBUG: Get user l@lol.com [] {"uid":"7fadbca"}
-[2019-07-18 00:00:55] app.DEBUG: Get user l@lol.com [] {"uid":"8755660"}
-[2019-07-18 00:01:15] app.DEBUG: Get user l@lol.com [] {"uid":"f96085f"}
-[2019-07-18 00:01:26] app.DEBUG: Get user l@lol.com [] {"uid":"04415bd"}
-[2019-07-18 00:02:04] app.DEBUG: Get user l@lol.com [] {"uid":"121d6f2"}
-[2019-07-18 00:03:15] app.DEBUG: Get user lo@l.com [] {"uid":"7299f2a"}
-[2019-07-18 00:03:26] app.DEBUG: Get user lo@l.com [] {"uid":"b10b677"}
-[2019-07-18 00:03:39] app.DEBUG: Get user lo@l.com [] {"uid":"897f800"}
-[2019-07-18 00:09:27] app.DEBUG: Get user lo@l.com [] {"uid":"5ff2689"}
-[2019-07-18 00:09:31] app.DEBUG: Get user lo@l.com [] {"uid":"a6ed85c"}
-[2019-07-18 00:09:35] app.DEBUG: Get user ldo@l.com [] {"uid":"b1d178e"}
-[2019-07-18 00:09:50] app.DEBUG: Get user ldo@l.com [] {"uid":"cf50481"}
-[2019-07-18 00:10:17] app.DEBUG: Get user ldo@l.com [] {"uid":"c9ebb9b"}
-[2019-07-18 00:10:22] app.DEBUG: Get user lo@l.com [] {"uid":"f7bc898"}
-[2019-07-18 00:10:32] app.DEBUG: Get user lo@l.com [] {"uid":"d02aa46"}
-[2019-07-18 00:10:35] app.DEBUG: Get user lo@l.com [] {"uid":"4cc05b2"}
-[2019-07-18 00:11:02] app.DEBUG: Get user lo@l.com [] {"uid":"8ae7e0e"}
-[2019-07-18 00:11:06] app.DEBUG: Get user lo@l.com [] {"uid":"9698546"}
-[2019-07-18 00:11:55] app.DEBUG: Get user lo@l.com [] {"uid":"f886bd4"}
-[2019-07-18 00:12:03] app.DEBUG: Get user lo@l.com [] {"uid":"76240f5"}
-[2019-07-18 00:12:07] app.DEBUG: Get user lo@l.com [] {"uid":"c16c800"}
-[2019-07-18 00:12:20] app.DEBUG: Get user jimmy@uwe.com [] {"uid":"73fc577"}
-[2019-07-18 00:12:23] app.DEBUG: Get user jimmy@uwe.com [] {"uid":"3e291b8"}
-[2019-07-18 00:12:26] app.DEBUG: Get user jimmy@uwe.com [] {"uid":"2c91ad2"}
-[2019-07-18 00:13:44] app.DEBUG: Get user jimmy@uwe.com [] {"uid":"7e533ad"}
-[2019-07-18 00:13:47] app.DEBUG: Get user jimmy@uwe.com [] {"uid":"466dc12"}
-[2019-07-18 00:17:10] app.DEBUG: Get user jimmy@uwe.com [] {"uid":"fe61b0f"}
-[2019-07-18 00:28:15] app.DEBUG: Get user jimmy@uwe.com [] {"uid":"181416c"}
-[2019-07-18 00:28:27] app.DEBUG: Get user jimmy@uwe.com [] {"uid":"aacda33"}
-[2019-07-18 00:31:24] app.DEBUG: Get user jimmyo@uwe.com [] {"uid":"9512b30"}
-[2019-07-18 00:31:28] app.DEBUG: Get user jimmyo@uwe.com [] {"uid":"dbbd677"}
-[2019-07-18 10:49:54] app.DEBUG: Get module 1 [] {"uid":"a5b1d0f"}
-[2019-07-18 10:56:59] app.DEBUG: Get note for user module5 1 [] {"uid":"96ac46e"}
-[2019-07-18 10:56:59] app.INFO: Exam note retrieved 5 [] {"uid":"96ac46e"}
-[2019-07-18 10:58:36] app.DEBUG: Get note for user module5 1 [] {"uid":"3495d9f"}
-[2019-07-18 10:58:36] app.INFO: Exam note retrieved 5 [] {"uid":"3495d9f"}
-[2019-07-18 10:58:41] app.DEBUG: Get user 1 [] {"uid":"4703b8b"}
-[2019-07-18 10:58:41] app.INFO: Exam note retrieved 1 [] {"uid":"4703b8b"}
-[2019-07-18 10:59:01] app.DEBUG: Get note for module1 [] {"uid":"41ca865"}
-[2019-07-18 10:59:01] app.INFO: Exam note retrieved 1 [] {"uid":"41ca865"}
-[2019-07-18 11:01:06] app.DEBUG: Get note for module1 [] {"uid":"405fe98"}
-[2019-07-18 11:01:06] app.INFO: Exam note retrieved 1 [] {"uid":"405fe98"}
-[2019-07-18 11:02:45] app.DEBUG: Get note for module1 [] {"uid":"6937212"}
-[2019-07-18 11:02:45] app.INFO: Exam note retrieved 1 [] {"uid":"6937212"}
-[2019-07-18 11:05:31] app.DEBUG: Get note for module1 [] {"uid":"46041ea"}
-[2019-07-18 11:05:31] app.INFO: Exam note retrieved 1 [] {"uid":"46041ea"}
-[2019-07-18 11:08:21] app.DEBUG: Get note for module1 [] {"uid":"bd170be"}
-[2019-07-18 11:08:21] app.INFO: Exam note retrieved 1 [] {"uid":"bd170be"}
-[2019-07-18 11:09:54] app.DEBUG: Get note for module1 [] {"uid":"85028cb"}
-[2019-07-18 11:09:54] app.INFO: Exam note retrieved 1 [] {"uid":"85028cb"}
-[2019-07-18 11:10:25] app.DEBUG: Get note for module1 [] {"uid":"9f3871d"}
-[2019-07-18 11:10:25] app.INFO: Exam note retrieved 1 [] {"uid":"9f3871d"}
-[2019-07-18 11:11:06] app.DEBUG: Get note for module1 [] {"uid":"ed2acdb"}
-[2019-07-18 11:11:06] app.INFO: Exam note retrieved 1 [] {"uid":"ed2acdb"}
-[2019-07-18 11:11:58] app.DEBUG: Get note for module2 [] {"uid":"f6f5e0a"}
-[2019-07-18 11:11:58] app.INFO: Exam note retrieved 2 [] {"uid":"f6f5e0a"}
-[2019-07-18 11:12:10] app.DEBUG: Get note for module5 [] {"uid":"e894a60"}
-[2019-07-18 11:12:10] app.INFO: Exam note retrieved 5 [] {"uid":"e894a60"}
-[2019-07-18 11:12:16] app.DEBUG: Get note for module4 [] {"uid":"d4b12be"}
-[2019-07-18 11:12:16] app.INFO: Exam note retrieved 4 [] {"uid":"d4b12be"}
-[2019-07-18 11:12:29] app.DEBUG: Get note for module1 [] {"uid":"9dc6f1c"}
-[2019-07-18 11:12:29] app.INFO: Exam note retrieved 1 [] {"uid":"9dc6f1c"}
+[2019-07-18 12:23:16] app.INFO:  [] {"uid":"cf7a0be"}
+[2019-07-18 12:25:14] app.INFO:  [] {"uid":"3539104"}
+[2019-07-18 12:38:17] app.DEBUG: Get user coco2@uwe.com [] {"uid":"c392aac"}
+[2019-07-18 12:38:29] app.DEBUG: Get user coco4@uwe.com [] {"uid":"95fcd7e"}
+[2019-07-18 12:38:34] app.DEBUG: Get user coco2@uwe.com [] {"uid":"98a0f5c"}
+[2019-07-18 12:54:43] app.DEBUG: Get user coco2@uwe.com [] {"uid":"7b51202"}
+[2019-07-18 13:20:10] app.DEBUG: Get user 9 [] {"uid":"74b16e3"}
+[2019-07-18 13:20:10] app.INFO: User retrieved 9 [] {"uid":"74b16e3"}
+[2019-07-18 13:20:11] app.DEBUG: Get user 9 [] {"uid":"6d2dd9f"}
+[2019-07-18 13:20:11] app.INFO: User retrieved 9 [] {"uid":"6d2dd9f"}
+[2019-07-18 13:20:36] app.DEBUG: Get user 9 [] {"uid":"6670fc2"}
+[2019-07-18 13:20:36] app.INFO: User retrieved 9 [] {"uid":"6670fc2"}
+[2019-07-18 13:29:29] app.DEBUG: Get user 9 [] {"uid":"c4729fd"}
+[2019-07-18 13:29:29] app.INFO: User retrieved 9 [] {"uid":"c4729fd"}
+[2019-07-18 13:30:01] app.DEBUG: Get user coco8@uwe.com [] {"uid":"86832b6"}
+[2019-07-18 13:30:10] app.DEBUG: Get module 1 [] {"uid":"b2bdc53"}
+[2019-07-18 13:30:10] app.DEBUG: Get module 2 [] {"uid":"b2bdc53"}
+[2019-07-18 13:30:10] app.DEBUG: Get module 3 [] {"uid":"b2bdc53"}
+[2019-07-18 13:31:08] app.DEBUG: Get user 10 [] {"uid":"e03ed8f"}
+[2019-07-18 13:31:08] app.INFO: User retrieved 10 [] {"uid":"e03ed8f"}

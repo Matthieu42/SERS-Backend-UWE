@@ -10,6 +10,7 @@ use Doctrine\ORM\EntityManager;
 use Psr\Log\LoggerInterface;
 use Doctrine\ORM\Query;
 use Doctrine\ORM\Query\ResultSetMapping;
+use App\Service\ModuleService;
 use JMS\Serializer;
 class UserService
 {
@@ -23,10 +24,13 @@ class UserService
      */
     protected $logger;
 
-    public function __construct(EntityManager $em, LoggerInterface $logger)
+    protected $moduleService;
+
+    public function __construct(EntityManager $em, LoggerInterface $logger,ModuleService $moduleService)
     {
         $this->em = $em;
         $this->logger = $logger;
+        $this->moduleService = $moduleService;
     }
 
     /**
@@ -81,12 +85,17 @@ class UserService
     public function userLogin($request)
     {
         $value = json_decode($request->getBody());
-        $valuePwd = $value->password;
-        $usr = $this->getUserByMail($value->mail);
+        //$value= json_encode($value);
+        $pwd = $value->password;
+        $name = $value->name;
+        $address = $value->address;
+        $mail = $value->mail;
+        $rep = [];
+        $usr = $this->getUserByMail($mail);
         $rep = [];
         if ($usr!==null){
             $pwdEntity = $usr->getPassword();
-            if (password_verify($valuePwd,$pwdEntity )) {
+            if (password_verify($pwd,$pwdEntity )) {
                 $rep['answer']="success";
 
             } else {
@@ -118,6 +127,7 @@ class UserService
         $name = $value->name;
         $address = $value->address;
         $mail = $value->mail;
+        $mod = $value->module;
         $rep = [];
         $enc = password_hash($pwd, PASSWORD_BCRYPT);
         if ($pwd!==null && $name!==null && $address!==null && $mail!==null) {
@@ -128,6 +138,10 @@ class UserService
             $usr->setEmail($mail);
             $usr->setSaltKey("useless");
             $usr->setIsAdmin(false);
+            foreach ($mod as $module){
+                $modTemp = $this->moduleService->getModuleById($module);
+                $usr->addModule($modTemp);
+            }
             $this->em->persist($usr);
             $this->em->flush();
 

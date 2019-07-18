@@ -27,7 +27,7 @@ final class userLogin
     public function __invoke(Request $request, Response $response, $args)
     {
         $user = $this->userService->userLogin($request);
-        //$this->logger->info('User retrieved '.$args['mail'] );
+        //$this->logger->info(var_export($request));
         $response = $response->withJson($user);
         return $response;
     }

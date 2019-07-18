@@ -33,13 +33,13 @@ $container['em'] = function ($c) {
 };
 
 // Doctrine
-$container['userService'] = function ($c) {
-    return new \App\Service\UserService($c->get('em'), $c->get('logger'));
-};
+
 $container['moduleService'] = function ($c) {
     return new \App\Service\ModuleService($c->get('em'), $c->get('logger'));
 };
-
+$container['userService'] = function ($c) {
+    return new \App\Service\UserService($c->get('em'), $c->get('logger'),$c->get('moduleService'));
+};
 $container[App\Action\DefaultAction::class] = function ($c) {
     return new App\Action\DefaultAction( $c->get('logger'));
 };
