@@ -14,7 +14,7 @@ To run the back-end, you must install "composer".
 Once done, run the following command : 
     composer install
 It will download the dependencies required to run the project. Then, do :
-    composer run
+    composer start
 
 For the database, run the file "sers_create_and_fill.sql" ; it will create the database and fill it with datas.
 

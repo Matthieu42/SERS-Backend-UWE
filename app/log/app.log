@@ -18,3 +18,383 @@
 [2019-07-18 13:30:10] app.DEBUG: Get module 3 [] {"uid":"b2bdc53"}
 [2019-07-18 13:31:08] app.DEBUG: Get user 10 [] {"uid":"e03ed8f"}
 [2019-07-18 13:31:08] app.INFO: User retrieved 10 [] {"uid":"e03ed8f"}
+[2019-07-18 13:33:11] app.DEBUG: Get all users  [] {"uid":"25b89bf"}
+[2019-07-18 13:33:40] app.DEBUG: Get user 13 [] {"uid":"1eccd19"}
+[2019-07-18 13:33:40] app.INFO: User retrieved 13 [] {"uid":"1eccd19"}
+[2019-07-18 13:34:08] app.DEBUG: Get user 13 [] {"uid":"e4ab755"}
+[2019-07-18 13:34:08] app.INFO: User retrieved 13 [] {"uid":"e4ab755"}
+[2019-07-18 13:34:49] app.DEBUG: Get user 13 [] {"uid":"a18830e"}
+[2019-07-18 13:34:49] app.INFO: User retrieved 13 [] {"uid":"a18830e"}
+[2019-07-18 13:35:11] app.DEBUG: Get module 1 [] {"uid":"6745a10"}
+[2019-07-18 13:35:11] app.DEBUG: Get module 4 [] {"uid":"6745a10"}
+[2019-07-18 13:35:28] app.DEBUG: Get module 1 [] {"uid":"3543312"}
+[2019-07-18 13:35:28] app.DEBUG: Get module 4 [] {"uid":"3543312"}
+[2019-07-18 13:35:31] app.DEBUG: Get module 1 [] {"uid":"66dbafa"}
+[2019-07-18 13:35:31] app.DEBUG: Get module 4 [] {"uid":"66dbafa"}
+[2019-07-18 13:35:37] app.DEBUG: Get all users  [] {"uid":"abd1db2"}
+[2019-07-18 13:35:48] app.DEBUG: Get user 16 [] {"uid":"0f5bc69"}
+[2019-07-18 13:35:48] app.INFO: User retrieved 16 [] {"uid":"0f5bc69"}
+[2019-07-18 13:35:58] app.DEBUG: Get note for module1 [] {"uid":"6f83cdc"}
+[2019-07-18 13:35:58] app.INFO: Exam note retrieved 1 [] {"uid":"6f83cdc"}
+[2019-07-18 13:36:03] app.DEBUG: Get module 1 [] {"uid":"2690c65"}
+[2019-07-18 13:36:07] app.DEBUG: Get all modules  [] {"uid":"33f2c61"}
+[2019-07-18 13:36:10] app.DEBUG: Get all modules  [] {"uid":"5bcbbcf"}
+[2019-07-18 13:36:17] app.DEBUG: Get user cocodu34@gmail.com [] {"uid":"c9716e1"}
+[2019-07-18 13:36:53] app.DEBUG: Get user 5 [] {"uid":"9816853"}
+[2019-07-18 13:36:53] app.INFO: User retrieved 5 [] {"uid":"9816853"}
+[2019-07-18 13:36:56] app.DEBUG: Get module 1 [] {"uid":"7ec8505"}
+[2019-07-18 13:36:56] app.DEBUG: Get module 4 [] {"uid":"7ec8505"}
+[2019-07-18 13:39:05] app.DEBUG: Get user 5 [] {"uid":"ad80d15"}
+[2019-07-18 13:39:05] app.INFO: Exam note retrieved 5 [] {"uid":"ad80d15"}
+[2019-07-18 13:39:15] app.DEBUG: Get note for module1 [] {"uid":"744a6fa"}
+[2019-07-18 13:39:15] app.INFO: Exam note retrieved 1 [] {"uid":"744a6fa"}
+[2019-07-18 13:39:19] app.DEBUG: Get note for module1 [] {"uid":"a027ea2"}
+[2019-07-18 13:39:19] app.INFO: Exam note retrieved 1 [] {"uid":"a027ea2"}
+[2019-07-18 13:39:22] app.DEBUG: Get user 16 [] {"uid":"81eea56"}
+[2019-07-18 13:39:22] app.INFO: User retrieved 16 [] {"uid":"81eea56"}
+[2019-07-18 13:39:25] app.DEBUG: Get note for user module5 2 [] {"uid":"b8d3cc0"}
+[2019-07-18 13:39:25] app.INFO: Exam note retrieved 5 [] {"uid":"b8d3cc0"}
+[2019-07-18 13:39:35] app.DEBUG: Get module 1 [] {"uid":"8a551e2"}
+[2019-07-18 13:39:41] app.DEBUG: Get user cocodu34@gmail.com [] {"uid":"efa51c7"}
+[2019-07-18 13:39:51] app.DEBUG: Get user cocodu34@gmail.com [] {"uid":"740e3e9"}
+[2019-07-18 14:31:13] app.DEBUG: Get user 1 [] {"uid":"2edd50e"}
+[2019-07-18 14:31:13] app.INFO: User retrieved 1 [] {"uid":"2edd50e"}
+[2019-07-18 14:31:13] app.DEBUG: Get user 1 [] {"uid":"4f040e6"}
+[2019-07-18 14:31:13] app.INFO: User retrieved 1 [] {"uid":"4f040e6"}
+[2019-07-18 14:31:13] app.DEBUG: Get user 1 [] {"uid":"f00cc48"}
+[2019-07-18 14:31:13] app.INFO: Exam note retrieved 1 [] {"uid":"f00cc48"}
+[2019-07-18 14:31:13] app.DEBUG: Get user 1 [] {"uid":"52602f7"}
+[2019-07-18 14:31:13] app.INFO: User retrieved 1 [] {"uid":"52602f7"}
+[2019-07-18 14:31:13] app.DEBUG: Get user 1 [] {"uid":"8405891"}
+[2019-07-18 14:31:13] app.INFO: User retrieved 1 [] {"uid":"8405891"}
+[2019-07-18 14:31:13] app.DEBUG: Get note for user module1 1 [] {"uid":"7a9e202"}
+[2019-07-18 14:31:13] app.INFO: Exam note retrieved 1 [] {"uid":"7a9e202"}
+[2019-07-18 14:31:13] app.DEBUG: Get user 1 [] {"uid":"1119ab8"}
+[2019-07-18 14:31:13] app.INFO: Exam note retrieved 1 [] {"uid":"1119ab8"}
+[2019-07-18 14:31:59] app.DEBUG: Get user 4 [] {"uid":"9b35ab3"}
+[2019-07-18 14:31:59] app.INFO: User retrieved 4 [] {"uid":"9b35ab3"}
+[2019-07-18 14:31:59] app.DEBUG: Get user 4 [] {"uid":"5457091"}
+[2019-07-18 14:31:59] app.INFO: User retrieved 4 [] {"uid":"5457091"}
+[2019-07-18 14:31:59] app.DEBUG: Get user 4 [] {"uid":"f678107"}
+[2019-07-18 14:31:59] app.INFO: Exam note retrieved 4 [] {"uid":"f678107"}
+[2019-07-18 14:31:59] app.DEBUG: Get user 4 [] {"uid":"64f975b"}
+[2019-07-18 14:31:59] app.INFO: User retrieved 4 [] {"uid":"64f975b"}
+[2019-07-18 14:31:59] app.DEBUG: Get user 4 [] {"uid":"7513134"}
+[2019-07-18 14:31:59] app.INFO: User retrieved 4 [] {"uid":"7513134"}
+[2019-07-18 14:31:59] app.DEBUG: Get user 4 [] {"uid":"cf1fd47"}
+[2019-07-18 14:31:59] app.INFO: Exam note retrieved 4 [] {"uid":"cf1fd47"}
+[2019-07-18 14:31:59] app.DEBUG: Get note for user module4 1 [] {"uid":"ddc18fb"}
+[2019-07-18 14:31:59] app.INFO: Exam note retrieved 4 [] {"uid":"ddc18fb"}
+[2019-07-18 14:32:11] app.DEBUG: Get user 5 [] {"uid":"363af7c"}
+[2019-07-18 14:32:11] app.INFO: User retrieved 5 [] {"uid":"363af7c"}
+[2019-07-18 14:32:11] app.DEBUG: Get user 5 [] {"uid":"673af76"}
+[2019-07-18 14:32:11] app.INFO: User retrieved 5 [] {"uid":"673af76"}
+[2019-07-18 14:32:11] app.DEBUG: Get user 5 [] {"uid":"ad5a090"}
+[2019-07-18 14:32:11] app.INFO: Exam note retrieved 5 [] {"uid":"ad5a090"}
+[2019-07-18 14:32:12] app.DEBUG: Get user 5 [] {"uid":"6d0cf11"}
+[2019-07-18 14:32:12] app.INFO: User retrieved 5 [] {"uid":"6d0cf11"}
+[2019-07-18 14:32:12] app.DEBUG: Get user 5 [] {"uid":"ef4d32c"}
+[2019-07-18 14:32:12] app.INFO: User retrieved 5 [] {"uid":"ef4d32c"}
+[2019-07-18 14:32:12] app.DEBUG: Get user 5 [] {"uid":"6d2255f"}
+[2019-07-18 14:32:12] app.INFO: Exam note retrieved 5 [] {"uid":"6d2255f"}
+[2019-07-18 14:32:12] app.DEBUG: Get note for user module5 1 [] {"uid":"bd5b3eb"}
+[2019-07-18 14:32:12] app.INFO: Exam note retrieved 5 [] {"uid":"bd5b3eb"}
+[2019-07-18 14:32:12] app.DEBUG: Get note for user module5 2 [] {"uid":"89f0c0e"}
+[2019-07-18 14:32:12] app.INFO: Exam note retrieved 5 [] {"uid":"89f0c0e"}
+[2019-07-18 14:32:39] app.DEBUG: Get user 1 [] {"uid":"3051dbc"}
+[2019-07-18 14:32:39] app.INFO: User retrieved 1 [] {"uid":"3051dbc"}
+[2019-07-18 14:32:39] app.DEBUG: Get user 1 [] {"uid":"a903018"}
+[2019-07-18 14:32:39] app.INFO: User retrieved 1 [] {"uid":"a903018"}
+[2019-07-18 14:32:39] app.DEBUG: Get user 1 [] {"uid":"b4e9f7d"}
+[2019-07-18 14:32:40] app.INFO: Exam note retrieved 1 [] {"uid":"b4e9f7d"}
+[2019-07-18 14:32:40] app.DEBUG: Get user 1 [] {"uid":"c775ccd"}
+[2019-07-18 14:32:40] app.INFO: User retrieved 1 [] {"uid":"c775ccd"}
+[2019-07-18 14:32:40] app.DEBUG: Get user 1 [] {"uid":"f483146"}
+[2019-07-18 14:32:40] app.INFO: User retrieved 1 [] {"uid":"f483146"}
+[2019-07-18 14:32:40] app.DEBUG: Get user 1 [] {"uid":"0eb4c75"}
+[2019-07-18 14:32:40] app.INFO: Exam note retrieved 1 [] {"uid":"0eb4c75"}
+[2019-07-18 14:32:40] app.DEBUG: Get note for user module1 1 [] {"uid":"547deee"}
+[2019-07-18 14:32:40] app.INFO: Exam note retrieved 1 [] {"uid":"547deee"}
+[2019-07-18 14:33:43] app.DEBUG: Get all users  [] {"uid":"225eb05"}
+[2019-07-18 14:33:43] app.DEBUG: Get all users  [] {"uid":"daf8547"}
+[2019-07-18 14:33:54] app.DEBUG: Get user 6 [] {"uid":"f03ddc6"}
+[2019-07-18 14:33:54] app.INFO: User retrieved 6 [] {"uid":"f03ddc6"}
+[2019-07-18 14:33:54] app.DEBUG: Get note for user module6 2 [] {"uid":"1d41b24"}
+[2019-07-18 14:33:54] app.INFO: Exam note retrieved 6 [] {"uid":"1d41b24"}
+[2019-07-18 14:35:27] app.DEBUG: Get user 1 [] {"uid":"01e8e21"}
+[2019-07-18 14:35:27] app.INFO: User retrieved 1 [] {"uid":"01e8e21"}
+[2019-07-18 14:35:27] app.DEBUG: Get user 1 [] {"uid":"d0d0669"}
+[2019-07-18 14:35:27] app.INFO: User retrieved 1 [] {"uid":"d0d0669"}
+[2019-07-18 14:35:27] app.DEBUG: Get user 1 [] {"uid":"ae1b54e"}
+[2019-07-18 14:35:27] app.INFO: Exam note retrieved 1 [] {"uid":"ae1b54e"}
+[2019-07-18 14:35:27] app.DEBUG: Get note for user module1 1 [] {"uid":"9c91bfe"}
+[2019-07-18 14:35:27] app.INFO: Exam note retrieved 1 [] {"uid":"9c91bfe"}
+[2019-07-18 14:35:29] app.DEBUG: Get all users  [] {"uid":"1d9199c"}
+[2019-07-18 14:35:31] app.DEBUG: Get user 6 [] {"uid":"50b37e0"}
+[2019-07-18 14:35:31] app.INFO: User retrieved 6 [] {"uid":"50b37e0"}
+[2019-07-18 14:35:31] app.DEBUG: Get user 6 [] {"uid":"e1b20ed"}
+[2019-07-18 14:35:31] app.INFO: User retrieved 6 [] {"uid":"e1b20ed"}
+[2019-07-18 14:35:31] app.DEBUG: Get user 6 [] {"uid":"bd9b5f7"}
+[2019-07-18 14:35:31] app.INFO: Exam note retrieved 6 [] {"uid":"bd9b5f7"}
+[2019-07-18 14:35:31] app.DEBUG: Get note for user module6 2 [] {"uid":"a433fae"}
+[2019-07-18 14:35:31] app.INFO: Exam note retrieved 6 [] {"uid":"a433fae"}
+[2019-07-18 14:35:32] app.DEBUG: Get all users  [] {"uid":"88bed69"}
+[2019-07-18 14:35:37] app.DEBUG: Get user 4 [] {"uid":"f72953b"}
+[2019-07-18 14:35:37] app.INFO: User retrieved 4 [] {"uid":"f72953b"}
+[2019-07-18 14:35:37] app.DEBUG: Get note for user module4 1 [] {"uid":"6649932"}
+[2019-07-18 14:35:37] app.INFO: Exam note retrieved 4 [] {"uid":"6649932"}
+[2019-07-18 14:35:42] app.DEBUG: Get user 4 [] {"uid":"8a992c3"}
+[2019-07-18 14:35:42] app.INFO: User retrieved 4 [] {"uid":"8a992c3"}
+[2019-07-18 14:35:42] app.DEBUG: Get user 4 [] {"uid":"8122372"}
+[2019-07-18 14:35:42] app.INFO: User retrieved 4 [] {"uid":"8122372"}
+[2019-07-18 14:35:42] app.DEBUG: Get note for user module4 1 [] {"uid":"ab83559"}
+[2019-07-18 14:35:42] app.INFO: Exam note retrieved 4 [] {"uid":"ab83559"}
+[2019-07-18 14:35:42] app.DEBUG: Get user 4 [] {"uid":"529c883"}
+[2019-07-18 14:35:42] app.INFO: Exam note retrieved 4 [] {"uid":"529c883"}
+[2019-07-18 14:35:43] app.DEBUG: Get all users  [] {"uid":"cb8e461"}
+[2019-07-18 14:35:45] app.DEBUG: Get user 4 [] {"uid":"0ff98c7"}
+[2019-07-18 14:35:45] app.INFO: User retrieved 4 [] {"uid":"0ff98c7"}
+[2019-07-18 14:35:45] app.DEBUG: Get note for user module4 1 [] {"uid":"99374ab"}
+[2019-07-18 14:35:45] app.INFO: Exam note retrieved 4 [] {"uid":"99374ab"}
+[2019-07-18 14:36:07] app.DEBUG: Get all modules  [] {"uid":"f28fc69"}
+[2019-07-18 14:36:07] app.DEBUG: Get all users  [] {"uid":"56a5036"}
+[2019-07-18 14:36:08] app.DEBUG: Get all modules  [] {"uid":"eade5ca"}
+[2019-07-18 14:36:08] app.DEBUG: Get all users  [] {"uid":"5bc4ece"}
+[2019-07-18 14:36:10] app.DEBUG: Get all users  [] {"uid":"f750ff2"}
+[2019-07-18 14:36:10] app.DEBUG: Get all users  [] {"uid":"22c62f0"}
+[2019-07-18 14:36:17] app.DEBUG: Get all modules  [] {"uid":"2d49756"}
+[2019-07-18 14:36:17] app.DEBUG: Get module 1 [] {"uid":"98b813a"}
+[2019-07-18 14:36:17] app.DEBUG: Get module 2 [] {"uid":"59e84b7"}
+[2019-07-18 14:36:17] app.DEBUG: Get module 3 [] {"uid":"e5dcb60"}
+[2019-07-18 14:36:17] app.DEBUG: Get module 4 [] {"uid":"9779347"}
+[2019-07-18 14:36:17] app.DEBUG: Get module 5 [] {"uid":"5ef246e"}
+[2019-07-18 14:36:17] app.DEBUG: Get module 6 [] {"uid":"ecd63d5"}
+[2019-07-18 14:36:18] app.DEBUG: Get all modules  [] {"uid":"3aa1c9a"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 1 [] {"uid":"77de4e0"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 4 [] {"uid":"4c9a65d"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 1 [] {"uid":"63ecf5c"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 2 [] {"uid":"6fda459"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 3 [] {"uid":"d9abfb3"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 5 [] {"uid":"2485494"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 6 [] {"uid":"0b83844"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 2 [] {"uid":"d70e3df"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 3 [] {"uid":"52cd179"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 4 [] {"uid":"9e66bd1"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 5 [] {"uid":"a707e9b"}
+[2019-07-18 14:36:18] app.DEBUG: Get module 6 [] {"uid":"8bb411c"}
+[2019-07-18 14:36:39] app.DEBUG: Get all modules  [] {"uid":"3f6a549"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 1 [] {"uid":"0980ce2"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 2 [] {"uid":"1f76936"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 3 [] {"uid":"d96df2f"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 4 [] {"uid":"61cf089"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 5 [] {"uid":"a73ae2a"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 6 [] {"uid":"197e880"}
+[2019-07-18 14:36:39] app.DEBUG: Get all modules  [] {"uid":"ffe0340"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 1 [] {"uid":"d8914cc"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 1 [] {"uid":"16089e2"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 3 [] {"uid":"a85705d"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 2 [] {"uid":"63bfef1"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 4 [] {"uid":"a0631f7"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 5 [] {"uid":"b8d1ffc"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 6 [] {"uid":"95db356"}
+[2019-07-18 14:36:39] app.DEBUG: Get module 2 [] {"uid":"1da9239"}
+[2019-07-18 14:36:40] app.DEBUG: Get module 3 [] {"uid":"4c15044"}
+[2019-07-18 14:36:40] app.DEBUG: Get module 4 [] {"uid":"9405a8b"}
+[2019-07-18 14:36:40] app.DEBUG: Get module 5 [] {"uid":"dec3823"}
+[2019-07-18 14:36:40] app.DEBUG: Get module 6 [] {"uid":"9f2d564"}
+[2019-07-18 14:36:48] app.DEBUG: Get all modules  [] {"uid":"0c58587"}
+[2019-07-18 14:36:48] app.DEBUG: Get all users  [] {"uid":"f98a81d"}
+[2019-07-18 14:36:48] app.DEBUG: Get all modules  [] {"uid":"730656c"}
+[2019-07-18 14:36:48] app.DEBUG: Get all users  [] {"uid":"f51f1ea"}
+[2019-07-18 14:36:59] app.DEBUG: Get note for module1 [] {"uid":"61bf720"}
+[2019-07-18 14:36:59] app.INFO: Exam note retrieved 1 [] {"uid":"61bf720"}
+[2019-07-18 14:36:59] app.DEBUG: Get note for module2 [] {"uid":"7356d5f"}
+[2019-07-18 14:36:59] app.INFO: Exam note retrieved 2 [] {"uid":"7356d5f"}
+[2019-07-18 14:36:59] app.DEBUG: Get note for module3 [] {"uid":"1279ab9"}
+[2019-07-18 14:36:59] app.INFO: Exam note retrieved 3 [] {"uid":"1279ab9"}
+[2019-07-18 14:36:59] app.DEBUG: Get note for module4 [] {"uid":"512145e"}
+[2019-07-18 14:36:59] app.INFO: Exam note retrieved 4 [] {"uid":"512145e"}
+[2019-07-18 14:36:59] app.DEBUG: Get note for module5 [] {"uid":"d94f313"}
+[2019-07-18 14:36:59] app.INFO: Exam note retrieved 5 [] {"uid":"d94f313"}
+[2019-07-18 14:36:59] app.DEBUG: Get note for module6 [] {"uid":"2c182fa"}
+[2019-07-18 14:36:59] app.INFO: Exam note retrieved 6 [] {"uid":"2c182fa"}
+[2019-07-18 14:37:25] app.DEBUG: Get user 1 [] {"uid":"8f9bfd2"}
+[2019-07-18 14:37:25] app.INFO: Exam note retrieved 1 [] {"uid":"8f9bfd2"}
+[2019-07-18 14:37:49] app.DEBUG: Get user 5 [] {"uid":"cba2d47"}
+[2019-07-18 14:37:49] app.INFO: Exam note retrieved 5 [] {"uid":"cba2d47"}
+[2019-07-18 14:38:11] app.DEBUG: Get note for module1 [] {"uid":"4e7fb6f"}
+[2019-07-18 14:38:11] app.INFO: Exam note retrieved 1 [] {"uid":"4e7fb6f"}
+[2019-07-18 14:38:40] app.DEBUG: Get all modules  [] {"uid":"c518fe4"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 1 [] {"uid":"25313f5"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 2 [] {"uid":"f1b7ea6"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 3 [] {"uid":"f9d83a2"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 4 [] {"uid":"0fce479"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 5 [] {"uid":"e56e55a"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 6 [] {"uid":"f143bbe"}
+[2019-07-18 14:38:40] app.DEBUG: Get all modules  [] {"uid":"f5910ed"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 1 [] {"uid":"e57f485"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 3 [] {"uid":"34539d5"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 1 [] {"uid":"58e7ab6"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 2 [] {"uid":"b374137"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 4 [] {"uid":"7c3beb1"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 5 [] {"uid":"e706420"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 6 [] {"uid":"d213d07"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 2 [] {"uid":"9184806"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 3 [] {"uid":"a72dbc7"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 4 [] {"uid":"c4e7f20"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 5 [] {"uid":"fdacf43"}
+[2019-07-18 14:38:40] app.DEBUG: Get module 6 [] {"uid":"acebb8f"}
+[2019-07-18 14:40:16] app.DEBUG: Get user cocodu34@gmail.com [] {"uid":"42d4c83"}
+[2019-07-18 14:42:51] app.DEBUG: Get all users  [] {"uid":"7fab0d5"}
+[2019-07-18 14:42:51] app.DEBUG: Get all users  [] {"uid":"93adcf6"}
+[2019-07-18 14:42:52] app.DEBUG: Get user 1 [] {"uid":"2b48bff"}
+[2019-07-18 14:42:52] app.INFO: User retrieved 1 [] {"uid":"2b48bff"}
+[2019-07-18 14:42:52] app.DEBUG: Get note for user module1 1 [] {"uid":"403cbff"}
+[2019-07-18 14:42:52] app.INFO: Exam note retrieved 1 [] {"uid":"403cbff"}
+[2019-07-18 14:44:06] app.DEBUG: Get all modules  [] {"uid":"6d98ee2"}
+[2019-07-18 14:44:07] app.DEBUG: Get all modules  [] {"uid":"2fdd6ae"}
+[2019-07-18 14:44:49] app.DEBUG: Get all users  [] {"uid":"3efcbd8"}
+[2019-07-18 14:44:50] app.DEBUG: Get all users  [] {"uid":"ebd64d4"}
+[2019-07-18 14:44:56] app.DEBUG: Get user 18 [] {"uid":"e9ec1f9"}
+[2019-07-18 14:44:56] app.INFO: User retrieved 18 [] {"uid":"e9ec1f9"}
+[2019-07-18 14:45:35] app.DEBUG: Get all modules  [] {"uid":"d8eb6b1"}
+[2019-07-18 14:45:35] app.DEBUG: Get all modules  [] {"uid":"5705183"}
+[2019-07-18 14:45:44] app.DEBUG: Get all users  [] {"uid":"3182b16"}
+[2019-07-18 14:45:44] app.DEBUG: Get all users  [] {"uid":"bc0eb1c"}
+[2019-07-18 14:48:52] app.DEBUG: Get all modules  [] {"uid":"ce13284"}
+[2019-07-18 14:48:52] app.DEBUG: Get module 1 [] {"uid":"e4bf79c"}
+[2019-07-18 14:48:52] app.DEBUG: Get module 2 [] {"uid":"834039a"}
+[2019-07-18 14:48:52] app.DEBUG: Get module 3 [] {"uid":"77d8247"}
+[2019-07-18 14:48:52] app.DEBUG: Get module 4 [] {"uid":"0dda1c7"}
+[2019-07-18 14:48:52] app.DEBUG: Get module 5 [] {"uid":"bdd1595"}
+[2019-07-18 14:48:52] app.DEBUG: Get module 6 [] {"uid":"8ae8aa3"}
+[2019-07-18 14:48:53] app.DEBUG: Get all modules  [] {"uid":"282cd02"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 1 [] {"uid":"3baa4b8"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 2 [] {"uid":"8ae2992"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 1 [] {"uid":"f291b71"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 4 [] {"uid":"9edfba8"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 3 [] {"uid":"a1801ad"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 5 [] {"uid":"900c39b"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 6 [] {"uid":"5e9e436"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 2 [] {"uid":"f2b1cde"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 3 [] {"uid":"639211c"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 4 [] {"uid":"7d675cd"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 5 [] {"uid":"ad0a77a"}
+[2019-07-18 14:48:53] app.DEBUG: Get module 6 [] {"uid":"3f80e46"}
+[2019-07-18 14:49:36] app.DEBUG: Get all modules  [] {"uid":"8a3ffd4"}
+[2019-07-18 14:49:36] app.DEBUG: Get all modules  [] {"uid":"ee10e26"}
+[2019-07-18 14:51:58] app.DEBUG: Get all modules  [] {"uid":"7b9a9a2"}
+[2019-07-18 14:51:58] app.DEBUG: Get module 1 [] {"uid":"912ef78"}
+[2019-07-18 14:51:58] app.DEBUG: Get module 2 [] {"uid":"6b7f129"}
+[2019-07-18 14:51:58] app.DEBUG: Get module 3 [] {"uid":"df704f3"}
+[2019-07-18 14:51:58] app.DEBUG: Get module 4 [] {"uid":"e9f03e0"}
+[2019-07-18 14:51:58] app.DEBUG: Get module 5 [] {"uid":"e03f282"}
+[2019-07-18 14:51:58] app.DEBUG: Get module 6 [] {"uid":"41793c6"}
+[2019-07-18 14:51:59] app.DEBUG: Get all modules  [] {"uid":"56044ec"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 1 [] {"uid":"10bb801"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 2 [] {"uid":"efe2974"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 1 [] {"uid":"59803ea"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 4 [] {"uid":"cd94765"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 3 [] {"uid":"80949df"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 5 [] {"uid":"9b5f21b"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 6 [] {"uid":"6e2d41a"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 2 [] {"uid":"19af8d4"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 3 [] {"uid":"0780e63"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 4 [] {"uid":"d4d1e7c"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 5 [] {"uid":"c4bdf17"}
+[2019-07-18 14:51:59] app.DEBUG: Get module 6 [] {"uid":"0f789aa"}
+[2019-07-18 14:52:06] app.DEBUG: Get all modules  [] {"uid":"00faf07"}
+[2019-07-18 14:52:06] app.DEBUG: Get all users  [] {"uid":"d001ada"}
+[2019-07-18 14:52:07] app.DEBUG: Get all modules  [] {"uid":"42cc3fd"}
+[2019-07-18 14:52:07] app.DEBUG: Get all users  [] {"uid":"2a705c7"}
+[2019-07-18 14:52:12] app.DEBUG: Get note for module1 [] {"uid":"3bcc17b"}
+[2019-07-18 14:52:12] app.INFO: Exam note retrieved 1 [] {"uid":"3bcc17b"}
+[2019-07-18 14:52:12] app.DEBUG: Get note for module2 [] {"uid":"0d29b71"}
+[2019-07-18 14:52:12] app.INFO: Exam note retrieved 2 [] {"uid":"0d29b71"}
+[2019-07-18 14:52:12] app.DEBUG: Get note for module3 [] {"uid":"3f973f0"}
+[2019-07-18 14:52:12] app.INFO: Exam note retrieved 3 [] {"uid":"3f973f0"}
+[2019-07-18 14:52:12] app.DEBUG: Get note for module4 [] {"uid":"2ae750c"}
+[2019-07-18 14:52:12] app.INFO: Exam note retrieved 4 [] {"uid":"2ae750c"}
+[2019-07-18 14:52:12] app.DEBUG: Get note for module5 [] {"uid":"6cbf0c2"}
+[2019-07-18 14:52:12] app.INFO: Exam note retrieved 5 [] {"uid":"6cbf0c2"}
+[2019-07-18 14:52:12] app.DEBUG: Get note for module6 [] {"uid":"25737e1"}
+[2019-07-18 14:52:12] app.INFO: Exam note retrieved 6 [] {"uid":"25737e1"}
+[2019-07-18 14:54:53] app.DEBUG: Get user 1 [] {"uid":"a331599"}
+[2019-07-18 14:54:53] app.INFO: User retrieved 1 [] {"uid":"a331599"}
+[2019-07-18 14:54:53] app.DEBUG: Get user 1 [] {"uid":"850e491"}
+[2019-07-18 14:54:53] app.INFO: User retrieved 1 [] {"uid":"850e491"}
+[2019-07-18 14:54:53] app.DEBUG: Get user 1 [] {"uid":"e2d4bc5"}
+[2019-07-18 14:54:53] app.INFO: Exam note retrieved 1 [] {"uid":"e2d4bc5"}
+[2019-07-18 14:54:54] app.DEBUG: Get user 1 [] {"uid":"31022cb"}
+[2019-07-18 14:54:54] app.INFO: User retrieved 1 [] {"uid":"31022cb"}
+[2019-07-18 14:54:54] app.DEBUG: Get user 1 [] {"uid":"654d978"}
+[2019-07-18 14:54:54] app.INFO: User retrieved 1 [] {"uid":"654d978"}
+[2019-07-18 14:54:54] app.DEBUG: Get user 1 [] {"uid":"d1bb3f6"}
+[2019-07-18 14:54:54] app.INFO: Exam note retrieved 1 [] {"uid":"d1bb3f6"}
+[2019-07-18 14:54:54] app.DEBUG: Get note for user module1 1 [] {"uid":"51f6956"}
+[2019-07-18 14:54:54] app.INFO: Exam note retrieved 1 [] {"uid":"51f6956"}
+[2019-07-18 14:54:56] app.DEBUG: Get all users  [] {"uid":"a3a1567"}
+[2019-07-18 14:54:57] app.DEBUG: Get all users  [] {"uid":"1ec071e"}
+[2019-07-18 14:55:00] app.DEBUG: Get user 1 [] {"uid":"4dfd3ec"}
+[2019-07-18 14:55:00] app.INFO: Exam note retrieved 1 [] {"uid":"4dfd3ec"}
+[2019-07-18 14:55:00] app.DEBUG: Get note for user module1 1 [] {"uid":"b499a8c"}
+[2019-07-18 14:55:00] app.INFO: Exam note retrieved 1 [] {"uid":"b499a8c"}
+[2019-07-28 18:26:02] app.INFO: completed [] {"uid":"02d123a"}
+[2019-07-29 15:03:36] app.INFO: completed [] {"uid":"6439b11"}
+[2019-07-29 15:11:50] app.DEBUG: Get all users  [] {"uid":"e4ba4aa"}
+[2019-07-29 21:19:23] app.INFO: completed [] {"uid":"8ad393b"}
+[2019-07-29 21:22:53] app.INFO: completed [] {"uid":"e7baafc"}
+[2019-07-29 21:22:53] app.INFO: completed [] {"uid":"c09ff8f"}
+[2019-07-29 21:22:54] app.INFO: completed [] {"uid":"10e14ba"}
+[2019-07-29 21:22:54] app.INFO: completed [] {"uid":"51e8fab"}
+[2019-07-29 21:22:54] app.INFO: completed [] {"uid":"c1305f1"}
+[2019-07-29 21:23:12] app.INFO: completed [] {"uid":"042ffad"}
+[2019-07-29 21:23:15] app.INFO: completed [] {"uid":"8ba70bd"}
+[2019-07-29 21:23:21] app.INFO: completed [] {"uid":"315ea32"}
+[2019-07-29 21:29:14] app.DEBUG: Get all users  [] {"uid":"6731934"}
+[2019-07-29 21:29:18] app.DEBUG: Get all users  [] {"uid":"19b96ed"}
+[2019-07-30 07:13:43] app.DEBUG: Get all users  [] {"uid":"f0eb971"}
+[2019-07-30 07:13:46] app.DEBUG: Get all users  [] {"uid":"af16c09"}
+[2019-07-30 07:33:08] app.DEBUG: Get all users  [] {"uid":"5ca4071"}
+[2019-07-30 07:35:17] app.DEBUG: Get all users  [] {"uid":"aba1141"}
+[2019-07-30 07:37:46] app.INFO: completed [] {"uid":"aac82fb"}
+[2019-08-20 05:39:45] app.INFO: completed [] {"uid":"c4e1cac"}
+[2019-08-20 05:44:36] app.INFO: completed [] {"uid":"d33d6d3"}
+[2019-08-20 05:50:28] app.DEBUG: Get all users  [] {"uid":"85ff5ac"}
+[2019-08-20 05:50:29] app.DEBUG: Get all users  [] {"uid":"f8c886a"}
+[2019-08-20 05:50:51] app.DEBUG: Get all users  [] {"uid":"1d2e52e"}
+[2019-08-20 05:50:52] app.DEBUG: Get all users  [] {"uid":"f53628c"}
+[2019-08-20 05:51:34] app.DEBUG: Get all users  [] {"uid":"dad330a"}
+[2019-08-20 05:51:42] app.DEBUG: Get all users  [] {"uid":"e2725cd"}
+[2019-08-20 06:01:20] app.DEBUG: Get all users  [] {"uid":"14e99cc"}
+[2019-08-20 06:01:20] app.DEBUG: Get all users  [] {"uid":"2fd9c84"}
+[2019-08-20 06:02:41] app.DEBUG: Get user 1 [] {"uid":"5d0ab4e"}
+[2019-08-20 06:02:41] app.INFO: User retrieved 1 [] {"uid":"5d0ab4e"}
+[2019-08-20 06:02:41] app.DEBUG: Get user 1 [] {"uid":"59bdc3e"}
+[2019-08-20 06:02:41] app.INFO: User retrieved 1 [] {"uid":"59bdc3e"}
+[2019-08-20 06:02:41] app.DEBUG: Get user 1 [] {"uid":"0604a2d"}
+[2019-08-20 06:02:41] app.INFO: Exam note retrieved 1 [] {"uid":"0604a2d"}
+[2019-08-20 06:02:41] app.DEBUG: Get user 1 [] {"uid":"81d2e82"}
+[2019-08-20 06:02:41] app.INFO: User retrieved 1 [] {"uid":"81d2e82"}
+[2019-08-20 06:02:41] app.DEBUG: Get user 1 [] {"uid":"55e23cf"}
+[2019-08-20 06:02:41] app.INFO: User retrieved 1 [] {"uid":"55e23cf"}
+[2019-08-20 06:02:42] app.DEBUG: Get user 1 [] {"uid":"1c94945"}
+[2019-08-20 06:02:42] app.INFO: Exam note retrieved 1 [] {"uid":"1c94945"}
+[2019-08-20 06:02:42] app.DEBUG: Get note for user module1 1 [] {"uid":"bfbfc62"}
+[2019-08-20 06:02:42] app.INFO: Exam note retrieved 1 [] {"uid":"bfbfc62"}
+[2019-08-20 06:02:44] app.DEBUG: Get all users  [] {"uid":"598a533"}
+[2019-08-20 06:02:44] app.DEBUG: Get all users  [] {"uid":"874b2a7"}
+[2019-08-20 06:02:49] app.DEBUG: Get user 1 [] {"uid":"588124a"}
+[2019-08-20 06:02:49] app.INFO: User retrieved 1 [] {"uid":"588124a"}
+[2019-08-20 06:02:49] app.DEBUG: Get user 1 [] {"uid":"9a35d6f"}
+[2019-08-20 06:02:49] app.INFO: User retrieved 1 [] {"uid":"9a35d6f"}
+[2019-08-20 06:02:49] app.DEBUG: Get user 1 [] {"uid":"7e71707"}
+[2019-08-20 06:02:49] app.INFO: Exam note retrieved 1 [] {"uid":"7e71707"}
+[2019-08-20 06:02:50] app.DEBUG: Get user 1 [] {"uid":"4d8fbbb"}
+[2019-08-20 06:02:50] app.INFO: User retrieved 1 [] {"uid":"4d8fbbb"}
+[2019-08-20 06:02:50] app.DEBUG: Get user 1 [] {"uid":"614c103"}
+[2019-08-20 06:02:50] app.INFO: User retrieved 1 [] {"uid":"614c103"}
+[2019-08-20 06:02:50] app.DEBUG: Get user 1 [] {"uid":"933d5ca"}
+[2019-08-20 06:02:50] app.INFO: Exam note retrieved 1 [] {"uid":"933d5ca"}
+[2019-08-20 06:02:50] app.DEBUG: Get note for user module1 1 [] {"uid":"55c57e3"}
+[2019-08-20 06:02:50] app.INFO: Exam note retrieved 1 [] {"uid":"55c57e3"}

@@ -18,7 +18,7 @@ return [
             ],
             'connection' => [
                 'driver'   => 'pdo_mysql',
-                'host'     => 'localhost',
+                'host'     => '127.0.0.1',
                 'dbname'   => 'SERS',
                 'user'     => 'root',
                 'password' => 'root',
