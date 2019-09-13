@@ -1,9 +1,9 @@
 version: '3.7'
 services: 
 
-  backend:
+  sers-backend:
     build: .
-    image: backend
+    image: sers-backend
     container_name: sers-backend
     restart: always
     networks:
@@ -19,7 +19,7 @@ services:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=SERS
     volumes:
-      - /data/db_sers:/var/lib/mysql
+      - /Users/corentingrard/Desktop/db_sers:/var/lib/mysql
       - ./Database/sers.sql:/docker-entrypoint-initdb.d/dump.sql
     networks: 
       - internal
@@ -28,4 +28,4 @@ services:
 
 networks:
   internal:
-    external: false
+    external: true

@@ -18,8 +18,8 @@ return [
             ],
             'connection' => [
                 'driver'   => 'pdo_mysql',
-                'host'     => '127.0.0.1',
-                'dbname'   => 'SERS',
+                'host'     => 'db_sers',
+                'dbname'   => 'sers',
                 'user'     => 'root',
                 'password' => 'root',
             ]

@@ -29,7 +29,7 @@ by Elvis Ciotti <elvisciotti@gmail.com>
 
      In case of failures, check db connection settings
 
- * Run server `php -S localhost:8080`
+ * Run server `php -S 0.0.0.0:8080`
  * keep log open in another window. 
  Set at `debug` level to see all the internal operations which any added record is logged.
  On production it'll be set to warning/error for better performances.
@@ -40,14 +40,14 @@ by Elvis Ciotti <elvisciotti@gmail.com>
  * add data
  
     # insert test file.json
-    curl -X POST -d @app/fixtures/file.json http://localhost:8080/record
+    curl -X POST -d @app/fixtures/file.json http://0.0.0.0:8080/record
     
     # clean db
     vendor/bin/doctrine orm:schema-tool:drop --force
     vendor/bin/doctrine orm:schema-tool:create
     
     # run 2nd fixtures
-    curl -X POST -d @app/fixtures/file.json http://localhost:8080/record
+    curl -X POST -d @app/fixtures/file.json http://0.0.0.0:8080/record
 
 ### How to run tests
 

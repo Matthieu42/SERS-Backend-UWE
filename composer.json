@@ -12,7 +12,7 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
-        "start": "php -S localhost:8080 -t . router.php",
+        "start": "php -S 0.0.0.0:8080 -t . router.php",
         "db": "vendor/bin/doctrine orm:schema-tool:update"
     },
     "autoload": {
